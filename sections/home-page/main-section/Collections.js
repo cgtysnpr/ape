@@ -72,8 +72,8 @@ const Collections = () => {
           </Box>
         </Box>
         <Grid container spacing={4}>
-          {cardInformations.map((data) => (
-            <Grid item xs={12} md={4}>
+          {cardInformations.map((data,i) => (
+            <Grid key={"card"+i} item xs={12} md={4}>
               <CollectionsCards data={data} />
             </Grid>
           ))}

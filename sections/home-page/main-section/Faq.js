@@ -53,8 +53,8 @@ const Faq = () => {
               </ThemeProvider>
           </Box>
           <MainQuestion />
-          {questionsData.map((data)=>(
-            <Questions data={data}/>
+          {questionsData.map((data,i)=>(
+            <Questions key={"question"+i}  data={data}/>
           ))}
           
       </Container>
