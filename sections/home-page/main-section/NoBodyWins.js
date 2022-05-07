@@ -55,18 +55,18 @@ const NoBodyWins = ({}) => {
         </Box>
       </Container>
       <img
-        className="muscle"
-        src="/images/muscle.png"
-        alt="muscle"
-        width={343}
-        height={398}
+        className="diamond1"
+        src="/images/diamond1.png"
+        alt="diamond"
+        width={289}
+        height={286}
       />
       <img
-        className="rose3"
-        src="/images/rose-3.png"
-        alt="rose-3"
-        width={363}
-        height={360}
+        className="monopoly"
+        src="/images/monopoly2.png"
+        alt="monopoly"
+        width={462}
+        height={296}
       />
     </Box>
   );

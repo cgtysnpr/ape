@@ -14,7 +14,7 @@ const Lottery = () => {
     },
   };
   return (
-    <Box sx={{ width: "100%", position: "relative", mt: 10, mb: 30 }}>
+    <Box sx={{ width: "100%", position: "relative", mb: 30 }}>
       <Container fixed>
         <Grid container>
           <Grid item xs={12} md={6}>
@@ -78,27 +78,6 @@ const Lottery = () => {
           </Grid>
         </Grid>
       </Container>
-      <img
-        className="wise"
-        src="/images/wise.png"
-        alt="wise monkeys"
-        width={238}
-        height={530}
-      />
-      <img
-        className="monopoly"
-        src="/images/monopoly.png"
-        alt="monopoly"
-        width={462}
-        height={296}
-      />
-      <img
-        className="rose5"
-        src="/images/rose-5.png"
-        alt="rose-5"
-        width={502}
-        height={497}
-      />
     </Box>
   );
 };

@@ -58,8 +58,8 @@ a {
 }
 .monopoly {
   position: absolute;
-  left:100px;
-  bottom: -400px;
+  right:20px;
+  bottom: -250px;
   z-index:999;
 }
 .rose5 {
@@ -78,6 +78,12 @@ a {
   position: absolute;
   right:0;
   bottom: 0;
+  z-index:999;
+}
+.diamond1 {
+  position: absolute;
+  left:100px;
+  bottom: -250px;
   z-index:999;
 }
 @media only screen and (max-width: 1250px) {
@@ -115,6 +121,9 @@ a {
     display: none;
   }
   .monopoly {
+    display: none;
+  }
+  .diamond1 {
     display: none;
   }
 }

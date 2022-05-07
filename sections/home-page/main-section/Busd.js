@@ -14,8 +14,8 @@ const Busd = () => {
     },
   };
   return (
-    <Box sx={{ width: "100%", position: "relative" }}>
-      <Container fixed sx={{ mt: 10, position: "relative" }}>
+    <Box sx={{ width: "100%", position: "relative",mt:12 }}>
+      <Container fixed sx={{ position: "relative" }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
             <Image src="/images/gold.png" alt="gold" width={715} height={715} />
@@ -73,13 +73,15 @@ const Busd = () => {
           </Grid>
         </Grid>
       </Container>
-      <img
-        className="rose4"
-        src="/images/rose-4.png"
-        alt="rose4"
-        width={306}
-        height={303}
+      <Box sx={{display:'flex',justifyContent:'flex-end',pr:5}}>
+            <img
+        className="diamond2"
+        src="/images/diamond2.png"
+        alt="diamond2"
+        width={406}
+        height={254}
       />
+      </Box>
     </Box>
   );
 };
