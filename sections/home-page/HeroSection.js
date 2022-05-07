@@ -23,6 +23,7 @@ const HeroSection = ({}) => {
           backgroundImage: "url('images/hero-section.png')",
           minHeight: "100vh",
           width: "100%",
+          backgroundSize:'cover'
         }}
       >
         <Container sx={{ paddingTop: 25 }} fixed>

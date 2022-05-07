@@ -1,11 +1,7 @@
-import Grid from "@mui/material/Grid";
-import Image from "next/image";
+import { Container, Grid, Typography, Stack, Button, Box } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Typography } from "@mui/material";
-import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
-import Container from "@mui/material/Container";
-const AutoStaking = () => {
+import Image from "next/image";
+const Busd = () => {
   const theme = createTheme();
 
   theme.typography.h3 = {
@@ -18,16 +14,11 @@ const AutoStaking = () => {
     },
   };
   return (
-    <>
-      <Container fixed>
+    <Box sx={{ width: "100%", position: "relative" }}>
+      <Container fixed sx={{ mt: 10, position: "relative" }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
-            <Image
-              src="/images/image-1.png"
-              alt="Image-1"
-              width={715}
-              height={715}
-            />
+            <Image src="/images/gold.png" alt="gold" width={715} height={715} />
           </Grid>
           <Grid
             item
@@ -38,10 +29,7 @@ const AutoStaking = () => {
             xs={12}
             md={6}
           >
-            <Stack
-              sx={{ alignItems: { xs: "center", md: "flex-start" } }}
-              spacing={2}
-            >
+            <Stack sx={{ alignItems: { xs: "center", md: "flex-start" } }}>
               <ThemeProvider theme={theme}>
                 <Typography
                   variant="h3"
@@ -49,7 +37,7 @@ const AutoStaking = () => {
                   component="div"
                   sx={{ fontFamily: "Bangers", color: "white" }}
                 >
-                  Auto-Staking
+                  BUSD reflections
                 </Typography>
               </ThemeProvider>
               <Typography
@@ -62,9 +50,11 @@ const AutoStaking = () => {
                   lineHeight: "45px",
                 }}
               >
-                $UAD is a rebase token that rewards holders every 3 seconds with
-                a sustainable 191,021% APY. No need to connect the wallet to a
-                dApp to receive rewards simply buy and hold."
+                $UAD is a reflection coin that rewards holders with BUSD
+                reflections from taxes on every buy/sell. Every time there is a
+                buy 2% is reflected back to holders on every sell 4% is
+                reflected back to holders in the form of the stable coin Binance
+                USD (BUSD)
               </Typography>
               <Button
                 sx={{
@@ -81,30 +71,16 @@ const AutoStaking = () => {
               </Button>
             </Stack>
           </Grid>
-          <img
-            className="rose1"
-            src="/images/rose-1.png"
-            alt="rose-1"
-            width={419}
-            height={413}
-          />
-          <img
-            className="rose2"
-            src="/images/rose-2.png"
-            alt="rose-2"
-            width={502}
-            height={497}
-          />
-          <img
-            className="scream"
-            src="/images/scream.png"
-            alt="gorilla"
-            width={396}
-            height={720}
-          />
         </Grid>
       </Container>
-    </>
+      <img
+        className="rose4"
+        src="/images/rose-4.png"
+        alt="rose4"
+        width={306}
+        height={303}
+      />
+    </Box>
   );
 };
-export default AutoStaking;
+export default Busd;

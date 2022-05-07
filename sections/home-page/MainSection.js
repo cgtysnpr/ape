@@ -1,7 +1,12 @@
 import Box from "@mui/material/Box";
 import AutoStaking from "./main-section/AutoStaking";
-import Container from "@mui/material/Container";
 import Jackpot from "./main-section/Jackpot";
+import NoBodyWins from "./main-section/NoBodyWins";
+import Busd from "./main-section/Busd";
+import Lottery from "./main-section/Lottery";
+import Collections from "./main-section/Collections";
+import Faq from "./main-section/Faq";
+import Footer from "./main-section/Footer";
 const MainSection = () => {
   return (
     <>
@@ -11,16 +16,20 @@ const MainSection = () => {
           width: "100%",
           background:
             "linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('images/background.png')",
-            position:"relative",
-            overflow:"hidden",
+          position: "relative",
+          overflow: "hidden",
         }}
       >
-        <Container fixed>
-          <Box sx={{ pt: 10}}>
-            <AutoStaking />
-            <Jackpot/>
-          </Box>
-        </Container>
+        <Box sx={{ pt: 10 }}>
+          <AutoStaking />
+          <Jackpot />
+          <NoBodyWins />
+          <Busd />
+          <Lottery />
+          <Collections />
+          <Faq />
+          <Footer />
+        </Box>
       </Box>
     </>
   );
