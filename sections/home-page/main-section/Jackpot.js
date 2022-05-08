@@ -17,53 +17,95 @@ const Jackpot = () => {
     },
   };
   return (
-    <Container>
-      <Grid container spacing={2} sx={{ mt: 5 }}>
-        <Grid
-          sx={{ display: "flex", alignItems: "center" }}
-          item
-          xs={12}
-          md={6}
-        >
-          <Stack
-            sx={{ alignItems: { xs: "center", md: "flex-start" } }}
-            spacing={2}
+    <>
+      {/* web start */}
+      <Container fixed sx={{ display: { xs: "none", md: "block" } }}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid
+            sx={{ display: "flex", alignItems: "center" }}
+            item
+            xs={12}
+            md={6}
           >
-            <ThemeProvider theme={theme}>
+            <Stack
+              sx={{ alignItems: { xs: "center", md: "flex-start" } }}
+              spacing={2}
+            >
+              <ThemeProvider theme={theme}>
+                <Typography
+                  variant="h3"
+                  gutterBottom
+                  component="div"
+                  sx={{ fontFamily: "Bangers", color: "white" }}
+                >
+                  The Jackpot
+                </Typography>
+              </ThemeProvider>
               <Typography
-                variant="h3"
+                variant="h5"
                 gutterBottom
                 component="div"
-                sx={{ fontFamily: "Bangers", color: "white" }}
+                sx={{ fontFamily: "Poppins", color: "white" }}
               >
-                The Jackpot
+                How to win, we decided to give $UAD holders another source of
+                income the $UAD Jackpot. On every buy, 4% tax is allocated to
+                Jackpot on every sell 6% is allocated to the Jackpot. If there
+                is no buy over, .1 BNB in the last 10 minutes the last person
+                who buys in will win the Jackpot, 10% of all winnings will
+                automatically be sent to the burn address.
               </Typography>
-            </ThemeProvider>
+            </Stack>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Image
+              src="/images/jackpot.png"
+              alt="Jackpot"
+              width={715}
+              height={715}
+            />
+          </Grid>
+        </Grid>
+      </Container>
+      {/* web end */}
+      {/* --------------- */}
+      {/* mobile start */}
+      <Container fixed sx={{ display: { xs: "block", md: "none" } }}>
+        <Stack
+          sx={{ alignItems: { xs: "center", md: "flex-start" }, mt:5 }}
+          spacing={2}
+        >
+          <ThemeProvider theme={theme}>
             <Typography
-              variant="h5"
+              variant="h3"
               gutterBottom
               component="div"
-              sx={{ fontFamily: "Poppins", color: "white" }}
+              sx={{ fontFamily: "Bangers", color: "white" }}
             >
-              How to win, we decided to give $UAD holders another source of
-              income the $UAD Jackpot. On every buy, 4% tax is allocated to
-              Jackpot on every sell 6% is allocated to the Jackpot. If there is
-              no buy over, .1 BNB in the last 10 minutes the last person who
-              buys in will win the Jackpot, 10% of all winnings will
-              automatically be sent to the burn address.
+              The Jackpot
             </Typography>
-          </Stack>
-        </Grid>
-        <Grid item xs={12} md={6}>
+          </ThemeProvider>
           <Image
             src="/images/jackpot.png"
             alt="Jackpot"
             width={715}
             height={715}
           />
-        </Grid>
-      </Grid>
-    </Container>
+          <Typography
+            variant="h5"
+            gutterBottom
+            component="div"
+            sx={{ fontFamily: "Poppins", color: "white", textAlign: "center" }}
+          >
+            How to win, we decided to give $UAD holders another source of income
+            the $UAD Jackpot. On every buy, 4% tax is allocated to Jackpot on
+            every sell 6% is allocated to the Jackpot. If there is no buy over,
+            .1 BNB in the last 10 minutes the last person who buys in will win
+            the Jackpot, 10% of all winnings will automatically be sent to the
+            burn address.
+          </Typography>
+        </Stack>
+      </Container>
+    </>
   );
 };
 export default Jackpot;

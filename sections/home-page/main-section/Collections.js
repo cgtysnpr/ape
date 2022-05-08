@@ -50,12 +50,20 @@ const Collections = () => {
               variant="h3"
               gutterBottom
               component="div"
-              sx={{ fontFamily: "Bangers", color: "white" }}
+              sx={{ fontFamily: "Bangers", color: "white", display:{xs:'none',md:'block'} }}
             >
               NFT collection
             </Typography>
+            <Typography
+              variant="h3"
+              gutterBottom
+              component="div"
+              sx={{ fontFamily: "Bangers", color: "white", display:{xs:'block',md:'none'} }}
+            >
+              Articles
+            </Typography>
           </ThemeProvider>
-          <Box sx={{width:'50%'}}>
+          <Box sx={{width:{xs:'100%',md:'50%'},mb:2}}>
           <Typography
             variant="h5"
             gutterBottom

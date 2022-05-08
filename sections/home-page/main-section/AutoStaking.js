@@ -19,7 +19,8 @@ const AutoStaking = () => {
   };
   return (
     <>
-      <Container fixed>
+      {/* web start */}
+      <Container fixed sx={{ display: { xs: "none", md: "block" } }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
             <Image
@@ -103,6 +104,60 @@ const AutoStaking = () => {
             height={720}
           />
         </Grid>
+      </Container>
+      {/* web end */}
+      {/* -------------- */}
+      {/* mobile starts */}
+      <Container fixed sx={{ display: { xs: "block", md: "none" } }}>
+        <Stack
+          sx={{ alignItems: { xs: "center", md: "flex-start" } }}
+          spacing={2}
+        >
+          <ThemeProvider theme={theme}>
+            <Typography
+              variant="h3"
+              gutterBottom
+              component="div"
+              sx={{ fontFamily: "Bangers", color: "white" }}
+            >
+              Auto-Staking
+            </Typography>
+          </ThemeProvider>
+          <Image
+            src="/images/image-1.png"
+            alt="Image-1"
+            width={715}
+            height={715}
+          />
+          <Typography
+            variant="h5"
+            gutterBottom
+            component="div"
+            sx={{
+              fontFamily: "Poppins",
+              color: "white",
+              lineHeight: "45px",
+              textAlign:'center'
+            }}
+          >
+            $UAD is a rebase token that rewards holders every 3 seconds with a
+            sustainable 191,021% APY. No need to connect the wallet to a dApp to
+            receive rewards simply buy and hold."
+          </Typography>
+          <Button
+            sx={{
+              fontFamily: "Bangers",
+              backgroundColor: "#FF0000",
+              fontSize: { xs: "15px", md: "24px" },
+              lineHeight: "25.54px",
+              width: { xs: "80%", md: "30%" },
+            }}
+            color="error"
+            variant="contained"
+          >
+            LEARN MORE
+          </Button>
+        </Stack>
       </Container>
     </>
   );

@@ -14,7 +14,7 @@ const NoBodyWins = ({}) => {
     },
   };
   return (
-    <Box sx={{ width: "100%", position: "relative" }}>
+    <Box sx={{ width: "100%", position: "relative", mt:10 }}>
       <Container fixed>
         <Box sx={{ textAlign: "center" }}>
           <ThemeProvider theme={theme}>

@@ -3,7 +3,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-const Questions = ({ data }) => {
+const Questions = ({ data, i }) => {
   const { title } = data;
   return (
     <div>
