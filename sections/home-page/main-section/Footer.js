@@ -15,7 +15,7 @@ const Footer = () => {
             flexDirection: "column",
           }}
         >
-          <Image src="/images/logo.png" alt="logo" width={144} height={168} />
+          <Image src="/images/logo.jpg" alt="logo" width={144} height={168} />
           <Typography
             sx={{
               fontFamily: "Poppins",

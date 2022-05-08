@@ -54,7 +54,7 @@ const Header = ({}) => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <Box sx={{ display: "flex", justifyContent: "center", mt: 4 }}>
-        <Image src="/images/logo.png" alt="Logo" width={173} height={169} />
+        <Image src="/images/logo.jpg" alt="Logo" width={173} height={169} />
       </Box>
       <List>
         {pages.map((text, index) => (
@@ -82,7 +82,7 @@ const Header = ({}) => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{display:{xs:'none',md:'block'}}}>
-          <Image src="/images/logo.png" alt="Logo" width={173} height={169} />
+          <Image src="/images/logo.jpg" alt="Logo" width={173} height={169} />
           </Box>
           <Box
             sx={{

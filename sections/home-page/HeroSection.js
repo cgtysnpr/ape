@@ -39,7 +39,7 @@ const HeroSection = ({}) => {
             <Grid container mt={2} spacing={7}>
               <Grid item xs={12} md={12} sx={{pb:7}}>
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logo.jpg"
                   alt="Logo"
                   width={379}
                   height={441}
