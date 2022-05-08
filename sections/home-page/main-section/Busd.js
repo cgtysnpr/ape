@@ -112,10 +112,7 @@ const Busd = () => {
           <Stack sx={{ alignItems: { xs: "center", md: "flex-start" } }}>
             <ThemeProvider theme={theme}>
               <Typography
-                variant="h3"
-                gutterBottom
-                component="div"
-                sx={{ fontFamily: "Bangers", color: "white" }}
+                sx={{ fontFamily: "Bangers", color: "white", fontSize:'53px' }}
               >
                 BUSD reflections
               </Typography>
@@ -129,7 +126,8 @@ const Busd = () => {
                 fontFamily: "Poppins",
                 color: "white",
                 lineHeight: "45px",
-                textAlign:'center'
+                textAlign:'center',
+                fontSize:'20px'
               }}
             >
               $UAD is a reflection coin that rewards holders with BUSD
@@ -141,9 +139,10 @@ const Busd = () => {
               sx={{
                 fontFamily: "Bangers",
                 backgroundColor: "#FF0000",
-                fontSize: { xs: "15px", md: "24px" },
+                fontSize:"24px",
                 lineHeight: "25.54px",
-                width: { xs: "80%", md: "30%" },
+                padding:'10px',
+                width: { xs: "50%", md: "30%" },
               }}
               color="error"
               variant="contained"

@@ -33,19 +33,13 @@ const Jackpot = () => {
             >
               <ThemeProvider theme={theme}>
                 <Typography
-                  variant="h3"
-                  gutterBottom
-                  component="div"
-                  sx={{ fontFamily: "Bangers", color: "white" }}
+                  sx={{ fontFamily: "Bangers", color: "white", fontSize:'53px' }}
                 >
                   The Jackpot
                 </Typography>
               </ThemeProvider>
               <Typography
-                variant="h5"
-                gutterBottom
-                component="div"
-                sx={{ fontFamily: "Poppins", color: "white" }}
+                sx={{ fontFamily: "Poppins", color: "white", fontSize:'30px' }}
               >
                 How to win, we decided to give $UAD holders another source of
                 income the $UAD Jackpot. On every buy, 4% tax is allocated to
@@ -71,15 +65,12 @@ const Jackpot = () => {
       {/* mobile start */}
       <Container fixed sx={{ display: { xs: "block", md: "none" } }}>
         <Stack
-          sx={{ alignItems: { xs: "center", md: "flex-start" }, mt:5 }}
+          sx={{ alignItems: { xs: "center", md: "flex-start" }, mt: 5 }}
           spacing={2}
         >
           <ThemeProvider theme={theme}>
             <Typography
-              variant="h3"
-              gutterBottom
-              component="div"
-              sx={{ fontFamily: "Bangers", color: "white" }}
+              sx={{ fontFamily: "Bangers", color: "white", fontSize: "53px" }}
             >
               The Jackpot
             </Typography>
@@ -91,10 +82,13 @@ const Jackpot = () => {
             height={715}
           />
           <Typography
-            variant="h5"
-            gutterBottom
-            component="div"
-            sx={{ fontFamily: "Poppins", color: "white", textAlign: "center" }}
+            sx={{
+              fontFamily: "Poppins",
+              color: "white",
+              textAlign: "center",
+              fontSize: "20px",
+              lineHeight: "30px",
+            }}
           >
             How to win, we decided to give $UAD holders another source of income
             the $UAD Jackpot. On every buy, 4% tax is allocated to Jackpot on

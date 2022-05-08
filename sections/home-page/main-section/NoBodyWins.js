@@ -14,24 +14,28 @@ const NoBodyWins = ({}) => {
     },
   };
   return (
-    <Box sx={{ width: "100%", position: "relative", mt:10 }}>
+    <Box sx={{ width: "100%", position: "relative", mt: 10 }}>
       <Container fixed>
         <Box sx={{ textAlign: "center" }}>
           <ThemeProvider theme={theme}>
             <Typography
-              variant="h4"
-              gutterBottom
-              component="div"
-              sx={{ fontFamily: "Poppins", color: "white" }}
+              sx={{
+                fontFamily: "Poppins",
+                color: "white",
+                fontSize: "20px",
+                fontWeight: 700,
+              }}
             >
               If nobody wins:
             </Typography>
           </ThemeProvider>
           <Typography
-            variant="h5"
-            gutterBottom
-            component="div"
-            sx={{ fontFamily: "Poppins", color: "white", lineHeight: "45px" }}
+            sx={{
+              fontFamily: "Poppins",
+              color: "white",
+              lineHeight: "45px",
+              fontSize: "20px",
+            }}
           >
             The Ticking Time Bomb - If the Jackpot reaches $100k and no one has
             won 50% of the Jackpot is split three ways, 40% goes to buyback and
@@ -45,7 +49,7 @@ const NoBodyWins = ({}) => {
               backgroundColor: "#FF0000",
               fontSize: { xs: "15px", md: "24px" },
               lineHeight: "25.54px",
-              width: { xs: "80%", md: "20%" },
+              width: { xs: "80%", md: "15%" },
             }}
             color="error"
             variant="contained"

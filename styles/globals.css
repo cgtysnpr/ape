@@ -30,9 +30,9 @@ a {
 }
 .scream {
   position: absolute;
-  right:100px;
+  right: 100px;
   top: 300px;
-  z-index:999;
+  z-index: 999;
 }
 .rose3 {
   position: absolute;
@@ -41,9 +41,9 @@ a {
 }
 .muscle {
   position: absolute;
-  left:20px;
+  left: 20px;
   top: 130px;
-  z-index:999;
+  z-index: 999;
 }
 .rose4 {
   position: absolute;
@@ -52,39 +52,49 @@ a {
 }
 .wise {
   position: absolute;
-  right:0;
+  right: 0;
   top: -250px;
-  z-index:999;
+  z-index: 999;
 }
 .monopoly {
   position: absolute;
-  right:20px;
+  right: 20px;
   bottom: -250px;
-  z-index:999;
+  z-index: 999;
 }
 .rose5 {
   position: absolute;
-  right:0;
+  right: 0;
   bottom: -500px;
-  z-index:999;
+  z-index: 999;
 }
 .rose6 {
   position: absolute;
-  left:0;
+  left: 0;
   bottom: 0;
-  z-index:999;
+  z-index: 999;
 }
 .rose7 {
   position: absolute;
-  right:0;
+  right: 0;
   bottom: 0;
-  z-index:999;
+  z-index: 999;
+}
+.rose8 {
+  position: absolute;
+  left: 0;
+  top: 100px;
+}
+.rose9 {
+  position: absolute;
+  right: 0;
+  top: -250px;
 }
 .diamond1 {
   position: absolute;
-  left:100px;
+  left: 100px;
   bottom: -250px;
-  z-index:999;
+  z-index: 999;
 }
 @media only screen and (max-width: 1250px) {
   .gorilla {
@@ -109,6 +119,12 @@ a {
     display: none;
   }
   .rose7 {
+    display: none;
+  }
+  .rose8 {
+    display: none;
+  }
+  .rose9 {
     display: none;
   }
   .scream {

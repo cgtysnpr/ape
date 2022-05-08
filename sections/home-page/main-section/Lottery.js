@@ -107,10 +107,7 @@ const Lottery = () => {
           >
             <ThemeProvider theme={theme}>
               <Typography
-                variant="h3"
-                gutterBottom
-                component="div"
-                sx={{ fontFamily: "Bangers", color: "white" }}
+                sx={{ fontFamily: "Bangers", color: "white", fontSize:'53px' }}
               >
                 The Lottery
               </Typography>
@@ -122,14 +119,12 @@ const Lottery = () => {
               height={715}
             />
             <Typography
-              variant="h5"
-              gutterBottom
-              component="div"
               sx={{
                 fontFamily: "Poppins",
                 color: "white",
                 lineHeight: "45px",
-                textAlign:'center'
+                textAlign:'center',
+                fontSize:'20px'
               }}
             >
               The UAD protocol will hold a lottery every 12 hours and everyone
@@ -147,9 +142,10 @@ const Lottery = () => {
               sx={{
                 fontFamily: "Bangers",
                 backgroundColor: "#FF0000",
-                fontSize: { xs: "15px", md: "24px" },
+                fontSize:"24px",
                 lineHeight: "25.54px",
-                width: { xs: "80%", md: "30%" },
+                padding:'10px',
+                width: { xs: "50%", md: "30%" },
               }}
               color="error"
               variant="contained"

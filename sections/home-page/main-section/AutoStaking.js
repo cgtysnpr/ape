@@ -91,9 +91,9 @@ const AutoStaking = () => {
               height={413}
             />
             <img
-              className="rose2"
-              src="/images/rose-2.png"
-              alt="rose-2"
+              className="rose8"
+              src="/images/rose-8.png"
+              alt="rose-8"
               width={502}
               height={497}
             />
@@ -131,14 +131,13 @@ const AutoStaking = () => {
               height={715}
             />
             <Typography
-              variant="h5"
-              gutterBottom
-              component="div"
               sx={{
                 fontFamily: "Poppins",
                 color: "white",
-                lineHeight: "45px",
+                lineHeight: "30px",
                 textAlign: "center",
+                fontWeight:400,
+                fontSize:'20px',
               }}
             >
               $UAD is a rebase token that rewards holders every 3 seconds with a
@@ -149,9 +148,10 @@ const AutoStaking = () => {
               sx={{
                 fontFamily: "Bangers",
                 backgroundColor: "#FF0000",
-                fontSize: { xs: "15px", md: "24px" },
+                fontSize:"24px",
                 lineHeight: "25.54px",
-                width: { xs: "80%", md: "30%" },
+                padding:'10px',
+                width: { xs: "50%", md: "30%" },
               }}
               color="error"
               variant="contained"

@@ -16,12 +16,16 @@ const CollectionsCards = ({ data }) => {
         image={image}
         alt="green iguana"
       />
-      <CardContent>
+      <CardContent sx={{ pt: 1, pl: 0, pr: 0 }}>
         <Typography
-          gutterBottom
-          variant="h5"
-          sx={{ fontFamily: "Bangers", color: "white" }}
-          component="div"
+          sx={{
+            fontFamily: "Poppins",
+            color: "white",
+            fontSize: "26px",
+            fontWeight: 700,
+            fontStyle: "normal",
+            lineHeight: "45px",
+          }}
         >
           {title}
         </Typography>
@@ -37,12 +41,21 @@ const CollectionsCards = ({ data }) => {
           endIcon={<ArrowForwardIcon />}
           variant="text"
           sx={{
+            width: "50%",
             fontFamily: "Bangers",
             color: "white",
-            borderBottom: "2px solid #FF0000",
           }}
         >
-          Learn More
+          <Typography
+            sx={{
+              fontSize: "20px",
+              lineHeight: "30px",
+              whiteSpace: "nowrap",
+              borderBottom: "2px solid #FF0000",
+            }}
+          >
+            Learn More
+          </Typography>
         </Button>
       </CardActions>
     </Card>

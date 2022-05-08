@@ -35,7 +35,7 @@ const Collections = () => {
   };
   return (
     <div id="ARTICLE">
-      <Box>
+      <Box sx={{position:'relative', width:'100%'}}>
         <Container fixed>
           <Box
             sx={{
@@ -48,39 +48,33 @@ const Collections = () => {
           >
             <ThemeProvider theme={theme}>
               <Typography
-                variant="h3"
-                gutterBottom
-                component="div"
                 sx={{
                   fontFamily: "Bangers",
                   color: "white",
+                  fontSize: "53px",
                   display: { xs: "none", md: "block" },
                 }}
               >
                 NFT collection
               </Typography>
               <Typography
-                variant="h3"
-                gutterBottom
-                component="div"
                 sx={{
                   fontFamily: "Bangers",
                   color: "white",
+                  fontSize: "53px",
                   display: { xs: "block", md: "none" },
                 }}
               >
                 Articles
               </Typography>
             </ThemeProvider>
-            <Box sx={{ width: { xs: "100%", md: "50%" }, mb: 2 }}>
+            <Box sx={{ width: { xs: "100%", md: "70%" }, mb: 2 }}>
               <Typography
-                variant="h5"
-                gutterBottom
-                component="div"
                 sx={{
                   fontFamily: "Poppins",
                   color: "white",
                   lineHeight: "45px",
+                  fontSize: "30px",
                 }}
               >
                 Cras posuere ultrices varius odio odio fames rutrum laoreet
@@ -96,6 +90,13 @@ const Collections = () => {
             ))}
           </Grid>
         </Container>
+        <img
+          className="rose9"
+          src="/images/rose-9.png"
+          alt="rose-9"
+          width={502}
+          height={497}
+        />
       </Box>
     </div>
   );

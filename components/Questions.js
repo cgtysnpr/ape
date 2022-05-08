@@ -10,13 +10,17 @@ const Questions = ({ data, index, clickedQuestion, questionId }) => {
       <Accordion
         sx={
           questionId === index
-            ? { backgroundColor: "#000", borderRadius: "0px!important", border: "2px solid #fff" }
+            ? {
+                backgroundColor: "#000",
+                borderRadius: "0px!important",
+                border: "2px solid #fff",
+              }
             : {
                 backgroundColor: "rgba(255, 255, 255, 0.3)",
                 borderRadius: "0px!important",
               }
         }
-        expanded={questionId !== index? false : true}
+        expanded={questionId !== index ? false : true}
         onClick={() => clickedQuestion(index)}
       >
         <AccordionSummary
@@ -24,7 +28,18 @@ const Questions = ({ data, index, clickedQuestion, questionId }) => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography sx={{ fontFamily: "Poppins", color: "white" }}>
+          <Typography
+            sx={
+              questionId === index
+                ? { fontFamily: "Poppins", color: "white", fontSize: "25px", fontWeight:700 }
+                : {
+                    fontFamily: "Poppins",
+                    color: "white",
+                    fontWeight: 400,
+                    fontSize: "25px",
+                  }
+            }
+          >
             {title}
           </Typography>
         </AccordionSummary>
