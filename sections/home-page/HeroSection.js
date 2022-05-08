@@ -8,7 +8,7 @@ const HeroSection = ({}) => {
   const theme = createTheme();
 
   theme.typography.h3 = {
-    fontSize: "2rem",
+    fontSize: "40px",
     "@media (min-width:600px)": {
       fontSize: "2rem",
     },
@@ -23,10 +23,11 @@ const HeroSection = ({}) => {
           backgroundImage: "url('images/hero-section.png')",
           minHeight: "100vh",
           width: "100%",
-          backgroundSize:'cover'
+          backgroundSize:'cover',
+          backgroundPosition:'bottom'
         }}
       >
-        <Container sx={{ paddingTop: 25 }} fixed>
+        <Container sx={{ paddingTop: 18 }} fixed>
           <Box
             sx={{
               display: "flex",
@@ -36,7 +37,7 @@ const HeroSection = ({}) => {
             }}
           >
             <Grid container mt={2} spacing={7}>
-              <Grid item xs={12} md={12}>
+              <Grid item xs={12} md={12} sx={{pb:7}}>
                 <Image
                   src="/images/logo.png"
                   alt="Logo"
@@ -50,7 +51,7 @@ const HeroSection = ({}) => {
                     variant="h3"
                     gutterBottom
                     component="div"
-                    sx={{ fontFamily: "Bangers", color: "white" }}
+                    sx={{ fontFamily: "Bangers", color: "white", lineHeight:'42px' }}
                   >
                     United Apes are on a mission to take over DeFi with an
                     innovative and determined team focused on bringing strength

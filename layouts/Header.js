@@ -81,7 +81,9 @@ const Header = ({}) => {
     <AppBar color="transparent" position="absolute" sx={{ boxShadow: 0, p: 5 }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+          <Box sx={{display:{xs:'none',md:'block'}}}>
           <Image src="/images/logo.png" alt="Logo" width={173} height={169} />
+          </Box>
           <Box
             sx={{
               flexGrow: 1,
