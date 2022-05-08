@@ -116,10 +116,7 @@ const AutoStaking = () => {
           >
             <ThemeProvider theme={theme}>
               <Typography
-                variant="h3"
-                gutterBottom
-                component="div"
-                sx={{ fontFamily: "Bangers", color: "white" }}
+                sx={{ fontFamily: "Bangers", color: "white",fontSize:'53px' }}
               >
                 Auto-Staking
               </Typography>

@@ -44,6 +44,8 @@ const Collections = () => {
               alignItems: "center",
               textAlign: "center",
               flexDirection: "column",
+              mb:20,
+              mt:20,
             }}
           >
             <ThemeProvider theme={theme}>
@@ -61,6 +63,7 @@ const Collections = () => {
                 sx={{
                   fontFamily: "Bangers",
                   color: "white",
+                  fontWeight:400,
                   fontSize: "53px",
                   display: { xs: "block", md: "none" },
                 }}
@@ -73,8 +76,8 @@ const Collections = () => {
                 sx={{
                   fontFamily: "Poppins",
                   color: "white",
-                  lineHeight: "45px",
-                  fontSize: "30px",
+                  lineHeight: "30px",
+                  fontSize: "20px",
                 }}
               >
                 Cras posuere ultrices varius odio odio fames rutrum laoreet
