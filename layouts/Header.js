@@ -7,11 +7,8 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Grid from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import Image from "next/image";
 const pages = ["HOME", "PRODUCTS", "ARTICLE", "FAQ"];
 
@@ -26,6 +23,9 @@ const Header = ({}) => {
     setAnchorElNav(null);
   };
 
+  const menuClicked = () =>{
+    
+  }
   return (
     <AppBar color="transparent" position="absolute" sx={{ boxShadow: 0, p: 5 }}>
       <Container maxWidth="xl">

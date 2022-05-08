@@ -3,21 +3,6 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import Questions from "./Questions";
-const questionsData = [
-  {
-    title: "Semper risus sapien mus adipiscing in?",
-  },
-  {
-    title: "Duis duis vitae quam viverra ac?",
-  },
-  {
-    title: "Nec penatibus donec molestie?",
-  },
-  {
-    title: "Urna aenean ridiculus ut suspendisse?",
-  },
-];
 const MainQuestion = ({}) => {
   return (
     <div>
@@ -46,9 +31,6 @@ const MainQuestion = ({}) => {
           </Box>
         </AccordionSummary>
         <AccordionDetails>
-          {questionsData.map((data, i) => (
-            <Questions key={"question" + i} index={i} data={data} />
-          ))}
         </AccordionDetails>
       </Accordion>
     </div>
