@@ -1,6 +1,5 @@
 import { Container, Typography, Box } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import MainQuestion from "../../../components/MainQuestion";
 import Questions from "../../../components/Questions";
 import { useState } from "react";
 const Faq = () => {
@@ -46,47 +45,49 @@ const Faq = () => {
     setQuestionId(id);
   };
   return (
-    <Box sx={{ mt: 10 }}>
-      <Container fixed>
-        <Box
-          sx={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            gap: 1,
-          }}
-        >
-          <ThemeProvider theme={theme}>
-            <Typography
-              variant="h3"
-              gutterBottom
-              component="div"
-              sx={{ fontFamily: "Bangers", color: "white" }}
-            >
-              Frequently Asked
-            </Typography>
+    <div id="FAQ">
+      <Box sx={{ mt: 10 }}>
+        <Container fixed>
+          <Box
+            sx={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              gap: 1,
+            }}
+          >
+            <ThemeProvider theme={theme}>
+              <Typography
+                variant="h3"
+                gutterBottom
+                component="div"
+                sx={{ fontFamily: "Bangers", color: "white" }}
+              >
+                Frequently Asked
+              </Typography>
 
-            <Typography
-              variant="h3"
-              gutterBottom
-              component="div"
-              sx={{ fontFamily: "Bangers", color: "#FF0000" }}
-            >
-              Questions
-            </Typography>
-          </ThemeProvider>
-        </Box>
-        {questionsData.map((data, i) => (
-          <Questions
-            key={"question" + i}
-            clickedQuestion={clickedQuestion}
-            index={i}
-            questionId={questionId}
-            data={data}
-          />
-        ))}
-      </Container>
-    </Box>
+              <Typography
+                variant="h3"
+                gutterBottom
+                component="div"
+                sx={{ fontFamily: "Bangers", color: "#FF0000" }}
+              >
+                Questions
+              </Typography>
+            </ThemeProvider>
+          </Box>
+          {questionsData.map((data, i) => (
+            <Questions
+              key={"question" + i}
+              clickedQuestion={clickedQuestion}
+              index={i}
+              questionId={questionId}
+              data={data}
+            />
+          ))}
+        </Container>
+      </Box>
+    </div>
   );
 };
 export default Faq;

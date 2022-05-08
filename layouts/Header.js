@@ -3,18 +3,44 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
 import Image from "next/image";
+import Drawer from "@mui/material/Drawer";
+import ListItem from "@mui/material/ListItem";
+import List from "@mui/material/List";
+import { makeStyles } from "@mui/styles";
+import PropTypes from "prop-types";
+import { Typography } from "@mui/material";
+import Link from "next/link";
+import {
+  ScrollingProvider,
+  useScrollSection,
+  Section,
+} from "react-scroll-section";
 const pages = ["HOME", "PRODUCTS", "ARTICLE", "FAQ"];
-
+const useStyles = makeStyles({
+  list: {
+    width: 250,
+  },
+  fullList: {
+    width: "auto",
+  },
+  paper: {
+    background: "#000",
+    padding: 5,
+  },
+});
 const Header = ({}) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-
+  const [state, setState] = React.useState({
+    top: false,
+    left: false,
+    bottom: false,
+    right: false,
+  });
+  const classes = useStyles();
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -22,48 +48,78 @@ const Header = ({}) => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
 
-  const menuClicked = () =>{
-    
-  }
+    setState({ ...state, [anchor]: open });
+  };
+  const list = (anchor) => (
+    <Box
+      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+      <Box sx={{ display: "flex", justifyContent: "center", mt: 4 }}>
+        <Image src="/images/logo.png" alt="Logo" width={173} height={169} />
+      </Box>
+      <List>
+        {pages.map((text, index) => (
+          <>
+            <Link href={`#${text}`}>
+              <ListItem sx={{ mb: 2, mt: 2 }} button key={text}>
+                <Typography
+                  sx={{
+                    fontFamily: "Bangers",
+                    color: "#FF0000",
+                    fontSize: "30px",
+                  }}
+                >
+                  {text}
+                </Typography>
+              </ListItem>
+            </Link>
+          </>
+        ))}
+      </List>
+    </Box>
+  );
   return (
     <AppBar color="transparent" position="absolute" sx={{ boxShadow: 0, p: 5 }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Image src="/images/logo.png" alt="Logo" width={173} height={169} />
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }, position:'absolute', right:'-30px' }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+              position: "absolute",
+              right: "-30px",
+            }}
+          >
             <IconButton
               aria-controls="menu-appbar"
               aria-haspopup="true"
-              onClick={handleOpenNavMenu}
+              onClick={toggleDrawer("left", true)}
               sx={{ color: "#FF0000", width: "100%" }}
             >
               <MenuIcon sx={{ fontSize: 80 }} />
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+            <React.Fragment>
+              <Drawer
+                classes={{ paper: classes.paper }}
+                anchor={"left"}
+                open={state["left"]}
+                onClose={toggleDrawer("left", false)}
+              >
+                {list("left")}
+              </Drawer>
+            </React.Fragment>
           </Box>
           <Box
             sx={{
@@ -74,31 +130,33 @@ const Header = ({}) => {
             }}
           >
             {pages.map((page, i) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={
-                  i === 0
-                    ? {
-                        fontFamily: "Bangers",
-                        my: 2,
-                        color: "white",
-                        display: "block",
-                        fontSize: { xs: "15px", md: "33px" },
-                        padding: "-5px",
-                        borderBottom: "4px solid #FF0000",
-                      }
-                    : {
-                        fontFamily: "Bangers",
-                        my: 2,
-                        color: "white",
-                        display: "block",
-                        fontSize: { xs: "15px", md: "33px" },
-                      }
-                }
-              >
-                {page}
-              </Button>
+              <Link href={`#${page}`}>
+                <Button
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={
+                    i === 0
+                      ? {
+                          fontFamily: "Bangers",
+                          my: 2,
+                          color: "white",
+                          display: "block",
+                          fontSize: { xs: "15px", md: "33px" },
+                          padding: "-5px",
+                          borderBottom: "4px solid #FF0000",
+                        }
+                      : {
+                          fontFamily: "Bangers",
+                          my: 2,
+                          color: "white",
+                          display: "block",
+                          fontSize: { xs: "15px", md: "33px" },
+                        }
+                  }
+                >
+                  {page}
+                </Button>
+              </Link>
             ))}
           </Box>
 
@@ -120,5 +178,8 @@ const Header = ({}) => {
       </Container>
     </AppBar>
   );
+};
+Header.propTypes = {
+  classes: PropTypes.object.isRequired,
 };
 export default Header;

@@ -34,60 +34,70 @@ const Collections = () => {
     },
   };
   return (
-    <Box>
-      <Container fixed>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            textAlign: "center",
-            flexDirection: "column",
-          }}
-        >
-          <ThemeProvider theme={theme}>
-            <Typography
-              variant="h3"
-              gutterBottom
-              component="div"
-              sx={{ fontFamily: "Bangers", color: "white", display:{xs:'none',md:'block'} }}
-            >
-              NFT collection
-            </Typography>
-            <Typography
-              variant="h3"
-              gutterBottom
-              component="div"
-              sx={{ fontFamily: "Bangers", color: "white", display:{xs:'block',md:'none'} }}
-            >
-              Articles
-            </Typography>
-          </ThemeProvider>
-          <Box sx={{width:{xs:'100%',md:'50%'},mb:2}}>
-          <Typography
-            variant="h5"
-            gutterBottom
-            component="div"
+    <div id="ARTICLE">
+      <Box>
+        <Container fixed>
+          <Box
             sx={{
-              fontFamily: "Poppins",
-              color: "white",
-              lineHeight: "45px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+              flexDirection: "column",
             }}
           >
-            Cras posuere ultrices varius odio odio fames rutrum laoreet
-            accumsan, aliquam rutrum est, felis odio.
-          </Typography>
+            <ThemeProvider theme={theme}>
+              <Typography
+                variant="h3"
+                gutterBottom
+                component="div"
+                sx={{
+                  fontFamily: "Bangers",
+                  color: "white",
+                  display: { xs: "none", md: "block" },
+                }}
+              >
+                NFT collection
+              </Typography>
+              <Typography
+                variant="h3"
+                gutterBottom
+                component="div"
+                sx={{
+                  fontFamily: "Bangers",
+                  color: "white",
+                  display: { xs: "block", md: "none" },
+                }}
+              >
+                Articles
+              </Typography>
+            </ThemeProvider>
+            <Box sx={{ width: { xs: "100%", md: "50%" }, mb: 2 }}>
+              <Typography
+                variant="h5"
+                gutterBottom
+                component="div"
+                sx={{
+                  fontFamily: "Poppins",
+                  color: "white",
+                  lineHeight: "45px",
+                }}
+              >
+                Cras posuere ultrices varius odio odio fames rutrum laoreet
+                accumsan, aliquam rutrum est, felis odio.
+              </Typography>
+            </Box>
           </Box>
-        </Box>
-        <Grid container spacing={4}>
-          {cardInformations.map((data,i) => (
-            <Grid key={"card"+i} item xs={12} md={4}>
-              <CollectionsCards data={data} />
-            </Grid>
-          ))}
-        </Grid>
-      </Container>
-    </Box>
+          <Grid container spacing={4}>
+            {cardInformations.map((data, i) => (
+              <Grid key={"card" + i} item xs={12} md={4}>
+                <CollectionsCards data={data} />
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </Box>
+    </div>
   );
 };
 export default Collections;
