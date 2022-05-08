@@ -14,11 +14,6 @@ import { makeStyles } from "@mui/styles";
 import PropTypes from "prop-types";
 import { Typography } from "@mui/material";
 import Link from "next/link";
-import {
-  ScrollingProvider,
-  useScrollSection,
-  Section,
-} from "react-scroll-section";
 const pages = ["HOME", "PRODUCTS", "ARTICLE", "FAQ"];
 const useStyles = makeStyles({
   list: {
@@ -33,7 +28,6 @@ const useStyles = makeStyles({
   },
 });
 const Header = ({}) => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -41,13 +35,7 @@ const Header = ({}) => {
     right: false,
   });
   const classes = useStyles();
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event.type === "keydown" &&
@@ -133,7 +121,6 @@ const Header = ({}) => {
               <Link href={`#${page}`}>
                 <Button
                   key={page}
-                  onClick={handleCloseNavMenu}
                   sx={
                     i === 0
                       ? {
