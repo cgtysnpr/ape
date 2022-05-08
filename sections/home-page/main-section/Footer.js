@@ -40,7 +40,7 @@ const Footer = () => {
               color: "white",
               lineHeight: "45px",
               textAlign: "center",
-              width: "50%",
+              width: {xs:"80%",md:"50%"},
               mt: 2,
               fontSize:'18px'
             }}
