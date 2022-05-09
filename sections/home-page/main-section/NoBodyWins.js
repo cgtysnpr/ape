@@ -14,15 +14,20 @@ const NoBodyWins = ({}) => {
     },
   };
   return (
-    <Box sx={{ width: "100%", position: "relative", mt: 10 }}>
+    <Box sx={{ width: "100%", position: "relative", mt: 15 }}>
       <Container fixed>
-        <Box sx={{ textAlign: "center" }}>
+        <Box
+          data-aos="zoom-in"
+          data-aos-delay={200}
+          data-aos-duration="1000"
+          sx={{ textAlign: "center" }}
+        >
           <ThemeProvider theme={theme}>
             <Typography
               sx={{
                 fontFamily: "Poppins",
                 color: "white",
-                fontSize: "20px",
+                fontSize: "30px",
                 fontWeight: 700,
               }}
             >
@@ -34,7 +39,8 @@ const NoBodyWins = ({}) => {
               fontFamily: "Poppins",
               color: "white",
               lineHeight: "45px",
-              fontSize: "20px",
+              fontSize: "30px",
+              mb: 2,
             }}
           >
             The Ticking Time Bomb - If the Jackpot reaches $100k and no one has
@@ -59,13 +65,19 @@ const NoBodyWins = ({}) => {
         </Box>
       </Container>
       <img
-        className="diamond1"
-        src="/images/diamond1.png"
-        alt="diamond"
-        width={289}
-        height={286}
+        data-aos="fade-right"
+        data-aos-delay={200}
+        data-aos-duration="500"
+        className="diamond2"
+        src="/images/diamond2.png"
+        alt="diamond-2"
+        width={345}
+        height={190}
       />
       <img
+        data-aos="fade-left"
+        data-aos-delay={200}
+        data-aos-duration="500"
         className="monopoly"
         src="/images/monopoly2.png"
         alt="monopoly"

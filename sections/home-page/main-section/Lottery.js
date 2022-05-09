@@ -30,6 +30,9 @@ const Lottery = () => {
               <Stack
                 sx={{ alignItems: { xs: "center", md: "flex-start" } }}
                 spacing={2}
+                data-aos="fade-right"
+                data-aos-delay={200}
+                data-aos-duration="1000"
               >
                 <ThemeProvider theme={theme}>
                   <Typography
@@ -77,7 +80,14 @@ const Lottery = () => {
                 </Button>
               </Stack>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid
+              data-aos="fade-left"
+              data-aos-delay={200}
+              data-aos-duration="1000"
+              item
+              xs={12}
+              md={6}
+            >
               <Image
                 src="/images/lottery.png"
                 alt="Lottery"
@@ -95,7 +105,7 @@ const Lottery = () => {
         sx={{
           width: "100%",
           position: "relative",
-          mt:10,
+          mt: 10,
           mb: 10,
           display: { xs: "block", md: "none" },
         }}
@@ -107,24 +117,33 @@ const Lottery = () => {
           >
             <ThemeProvider theme={theme}>
               <Typography
-                sx={{ fontFamily: "Bangers", color: "white", fontSize:'53px' }}
+                data-aos="fade-up"
+                data-aos-delay={200}
+                data-aos-duration="500"
+                sx={{ fontFamily: "Bangers", color: "white", fontSize: "53px" }}
               >
                 The Lottery
               </Typography>
             </ThemeProvider>
             <Image
+              data-aos="fade-up"
+              data-aos-delay={200}
+              data-aos-duration="500"
               src="/images/lottery.png"
               alt="Lottery"
               width={715}
               height={715}
             />
             <Typography
+              data-aos="fade-up"
+              data-aos-delay={200}
+              data-aos-duration="500"
               sx={{
                 fontFamily: "Poppins",
                 color: "white",
                 lineHeight: "45px",
-                textAlign:'center',
-                fontSize:'20px'
+                textAlign: "center",
+                fontSize: "20px",
               }}
             >
               The UAD protocol will hold a lottery every 12 hours and everyone
@@ -139,12 +158,15 @@ const Lottery = () => {
               reflections going there.
             </Typography>
             <Button
+              data-aos="fade-up"
+              data-aos-delay={200}
+              data-aos-duration="500"
               sx={{
                 fontFamily: "Bangers",
                 backgroundColor: "#FF0000",
-                fontSize:"24px",
+                fontSize: "24px",
                 lineHeight: "25.54px",
-                padding:'10px',
+                padding: "10px",
                 width: { xs: "50%", md: "30%" },
               }}
               color="error"

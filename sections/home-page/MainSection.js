@@ -27,7 +27,6 @@ const MainSection = () => {
           <Busd />
           <Lottery />
           <Collections />
-          <Faq />
           <Footer />
         </Box>
       </Box>

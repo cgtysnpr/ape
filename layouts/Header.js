@@ -6,7 +6,6 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import Image from "next/image";
 import Drawer from "@mui/material/Drawer";
 import ListItem from "@mui/material/ListItem";
 import List from "@mui/material/List";
@@ -14,7 +13,16 @@ import { makeStyles } from "@mui/styles";
 import PropTypes from "prop-types";
 import { Typography } from "@mui/material";
 import Link from "next/link";
-const pages = ["HOME", "PRODUCTS", "ARTICLE", "FAQ"];
+import {
+  Link as ScrollLink,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
+const pages = ["HOME", "PRODUCTS", "ARTICLE"];
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -35,7 +43,6 @@ const Header = ({}) => {
     right: false,
   });
   const classes = useStyles();
-
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event.type === "keydown" &&
@@ -53,14 +60,18 @@ const Header = ({}) => {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <Box sx={{ display: "flex", justifyContent: "center", mt: 4 }}>
-        <Image src="/images/logo.jpg" alt="Logo" width={173} height={169} />
-      </Box>
       <List>
         {pages.map((text, index) => (
           <>
-            <Link href={`#${text}`}>
-              <ListItem sx={{ mb: 2, mt: 2 }} button key={text}>
+            <ScrollLink
+              activeClass="active"
+              to={text}
+              spy={true}
+              onClick={toggleDrawer(anchor, false)}
+              smooth={true}
+              duration={500}
+            >
+              <ListItem sx={{ mb: 2, mt: 2 }} button>
                 <Typography
                   sx={{
                     fontFamily: "Bangers",
@@ -71,7 +82,7 @@ const Header = ({}) => {
                   {text}
                 </Typography>
               </ListItem>
-            </Link>
+            </ScrollLink>
           </>
         ))}
       </List>
@@ -81,9 +92,6 @@ const Header = ({}) => {
     <AppBar color="transparent" position="absolute" sx={{ boxShadow: 0, p: 5 }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box sx={{display:{xs:'none',md:'block'}}}>
-          <Image src="/images/logo.jpg" alt="Logo" width={173} height={169} />
-          </Box>
           <Box
             sx={{
               flexGrow: 1,
@@ -115,41 +123,53 @@ const Header = ({}) => {
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
-              justifyContent: "center",
+              justifyContent: "flex-start",
               gap: 4,
             }}
           >
             {pages.map((page, i) => (
-              <Link href={`#${page}`}>
-                <Button
-                  key={page}
-                  sx={
-                    i === 0
-                      ? {
-                          fontFamily: "Bangers",
-                          my: 2,
-                          color: "white",
-                          display: "block",
-                          fontSize: { xs: "15px", md: "33px" },
-                          padding: "-5px",
-                          borderBottom: "4px solid #FF0000",
-                        }
-                      : {
-                          fontFamily: "Bangers",
-                          my: 2,
-                          color: "white",
-                          display: "block",
-                          fontSize: { xs: "15px", md: "33px" },
-                        }
-                  }
+              <>
+                <ScrollLink
+                  activeClass="active"
+                  to={page}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
                 >
-                  {page}
-                </Button>
-              </Link>
+                  <Button
+                    data-aos="fade-down"
+                    data-aos-delay={i * 100}
+                    sx={
+                      i === 0
+                        ? {
+                            fontFamily: "Bangers",
+                            my: 2,
+                            color: "white",
+                            display: "block",
+                            fontSize: { xs: "15px", md: "33px" },
+                            padding: "-5px",
+                            borderBottom: "4px solid #FF0000",
+                          }
+                        : {
+                            fontFamily: "Bangers",
+                            my: 2,
+                            color: "white",
+                            display: "block",
+                            fontSize: { xs: "15px", md: "33px" },
+                          }
+                    }
+                  >
+                    {page}
+                  </Button>
+                </ScrollLink>
+              </>
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
+          <Box
+            data-aos="fade-down"
+            sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}
+          >
             <Button
               sx={{
                 fontFamily: "Bangers",
@@ -160,7 +180,7 @@ const Header = ({}) => {
               color="error"
               variant="contained"
             >
-              Contact Me
+              connect wallet
             </Button>
           </Box>
         </Toolbar>

@@ -5,7 +5,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <Box sx={{ width: "100%", position: "relative", mt: 10, pb:10 }}>
+    <Box sx={{ width: "100%", position: "relative", mt: 10, pb: 10 }}>
       <Container fixed>
         <Box
           sx={{
@@ -15,50 +15,88 @@ const Footer = () => {
             flexDirection: "column",
           }}
         >
-          <Image src="/images/logo.jpg" alt="logo" width={144} height={168} />
+          <Image
+            data-aos="flip-left"
+            data-aos-delay={200}
+            data-aos-duration="500"
+            src="/images/logo.jpg"
+            alt="logo"
+            width={144}
+            height={168}
+          />
           <Typography
+            data-aos="fade-up"
+            data-aos-delay={400}
+            data-aos-duration="500"
             sx={{
               fontFamily: "Poppins",
               color: "white",
               lineHeight: "45px",
               textAlign: "center",
-              width: {xs:"100%",md:"50%"},
-              fontSize:'30px',
+              width: { xs: "100%", md: "50%" },
+              fontSize: "30px",
               mt: 2,
             }}
           >
-            Mi habitant sem nulla dolor sed sapien dui donec adipiscing diam fusce viverra nisi neque
+            The saga continues...
           </Typography>
-          <Stack direction="row" spacing={2} sx={{mt:2}}>
-            <FacebookIcon sx={{ color: "white" }} />
-            <InstagramIcon sx={{ color: "white" }} />
-            <TwitterIcon sx={{ color: "white" }} />
+          <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
+            <Box
+              data-aos="fade-up"
+              data-aos-delay={600}
+              data-aos-duration="500"
+            >
+              <FacebookIcon sx={{ color: "white" }} />
+            </Box>
+            <Box
+              data-aos="fade-up"
+              data-aos-delay={800}
+              data-aos-duration="500"
+            >
+              <InstagramIcon sx={{ color: "white" }} />
+            </Box>
+            <Box
+              data-aos="fade-up"
+              data-aos-delay={1000}
+              data-aos-duration="500"
+            >
+              <TwitterIcon sx={{ color: "white" }} />
+            </Box>
           </Stack>
           <Typography
+            data-aos="fade-up"
+            data-aos-delay={1200}
+            data-aos-duration="500"
             sx={{
               fontFamily: "Poppins",
               color: "white",
               lineHeight: "45px",
               textAlign: "center",
-              width: {xs:"80%",md:"50%"},
+              width: { xs: "80%", md: "50%" },
               mt: 2,
-              fontSize:'18px'
+              fontSize: "18px",
             }}
           >
-           copyright © 2022 domotiica all rights reserved
+            copyright © 2022 domotiica all rights reserved
           </Typography>
         </Box>
       </Container>
       <img
         className="rose6"
-        src="/images/rose-8.png"
+        src="/images/rose-12.png"
         alt="rose-6"
         width={499}
         height={494}
+        data-aos="fade-right"
+        data-aos-delay={200}
+        data-aos-duration="500"
       />
       <img
+        data-aos="fade-left"
+        data-aos-delay={200}
+        data-aos-duration="500"
         className="rose7"
-        src="/images/rose-10.png"
+        src="/images/rose-13.png"
         alt="rose-7"
         width={363}
         height={360}

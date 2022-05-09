@@ -10,7 +10,7 @@ export default function Layout({ children }) {
           href="//fonts.googleapis.com/css?family=Bangers"
         />
       </Head>
-      <Header />
+      <Header key={"header"} />
       <main>{children}</main>
     </>
   );

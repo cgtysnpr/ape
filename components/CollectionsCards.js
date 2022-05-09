@@ -9,41 +9,23 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const CollectionsCards = ({ data }) => {
   const { image, title, description } = data;
   return (
-    <Card sx={{ maxWidth: 502, backgroundColor: "rgba(255, 255, 255, 0)" }}>
-      <CardMedia
-        component="img"
-        height="482"
-        image={image}
-        alt="green iguana"
-      />
-      <CardContent sx={{ pt: 1, pl: 0, pr: 0 }}>
-        <Typography
-          sx={{
-            fontFamily: "Poppins",
-            color: "white",
-            fontSize: "26px",
-            fontWeight: 700,
-            fontStyle: "normal",
-            lineHeight: "45px",
-          }}
-        >
-          {title}
-        </Typography>
-        <Typography
-          variant="body2"
-          sx={{ fontFamily: "Poppins", color: "#A7A8B6" }}
-        >
-          {description}
-        </Typography>
-      </CardContent>
-      <CardActions>
+    <div>
+      <Card sx={{ backgroundColor: "rgba(255, 255, 255, 0)" }}>
+        <CardMedia
+          component="img"
+          height="482"
+          image={image}
+          alt="green iguana"
+        />
+        <CardContent sx={{ pt: 1, pl: 0, pr: 0 }}></CardContent>
         <Button
-          endIcon={<ArrowForwardIcon />}
           variant="text"
           sx={{
             width: "50%",
             fontFamily: "Bangers",
             color: "white",
+            position: "relative",
+            pb: 2,
           }}
         >
           <Typography
@@ -52,13 +34,16 @@ const CollectionsCards = ({ data }) => {
               lineHeight: "30px",
               whiteSpace: "nowrap",
               borderBottom: "2px solid #FF0000",
+              position: "absolute",
+              left: 0,
             }}
           >
             Learn More
           </Typography>
+          <ArrowForwardIcon sx={{ position: "absolute", right: 0 }} />
         </Button>
-      </CardActions>
-    </Card>
+      </Card>
+    </div>
   );
 };
 export default CollectionsCards;

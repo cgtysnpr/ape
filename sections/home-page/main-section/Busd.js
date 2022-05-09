@@ -25,13 +25,20 @@ const Busd = () => {
         }}
       >
         <Container fixed sx={{ position: "relative" }}>
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={6}>
+          <Grid container spacing={5}>
+            <Grid
+              data-aos="fade-right"
+              data-aos-delay={200}
+              data-aos-duration="1000"
+              item
+              xs={12}
+              md={6}
+            >
               <Image
                 src="/images/gold.png"
                 alt="gold"
-                width={715}
-                height={715}
+                width={547}
+                height={547}
               />
             </Grid>
             <Grid
@@ -43,7 +50,12 @@ const Busd = () => {
               xs={12}
               md={6}
             >
-              <Stack sx={{ alignItems: { xs: "center", md: "flex-start" } }}>
+              <Stack
+                data-aos="fade-left"
+                data-aos-delay={200}
+                data-aos-duration="1000"
+                sx={{ alignItems: { xs: "center", md: "flex-start" } }}
+              >
                 <ThemeProvider theme={theme}>
                   <Typography
                     variant="h3"
@@ -87,15 +99,6 @@ const Busd = () => {
             </Grid>
           </Grid>
         </Container>
-        <Box sx={{ display: "flex", justifyContent: "flex-end", pr: 5 }}>
-          <img
-            className="diamond2"
-            src="/images/diamond2.png"
-            alt="diamond2"
-            width={406}
-            height={254}
-          />
-        </Box>
       </Box>
       {/* web end */}
       {/* ----------- */}
@@ -112,12 +115,23 @@ const Busd = () => {
           <Stack sx={{ alignItems: { xs: "center", md: "flex-start" } }}>
             <ThemeProvider theme={theme}>
               <Typography
-                sx={{ fontFamily: "Bangers", color: "white", fontSize:'53px' }}
+                data-aos="fade-up"
+                data-aos-delay={200}
+                data-aos-duration="500"
+                sx={{ fontFamily: "Bangers", color: "white", fontSize: "53px" }}
               >
                 BUSD reflections
               </Typography>
             </ThemeProvider>
-            <Image src="/images/gold.png" alt="gold" width={715} height={715} />
+            <Image
+              data-aos="fade-up"
+              data-aos-delay={200}
+              data-aos-duration="500"
+              src="/images/gold.png"
+              alt="gold"
+              width={547}
+              height={547}
+            />
             <Typography
               variant="h5"
               gutterBottom
@@ -126,9 +140,12 @@ const Busd = () => {
                 fontFamily: "Poppins",
                 color: "white",
                 lineHeight: "45px",
-                textAlign:'center',
-                fontSize:'20px'
+                textAlign: "center",
+                fontSize: "30px",
               }}
+              data-aos="fade-up"
+              data-aos-delay={200}
+              data-aos-duration="500"
             >
               $UAD is a reflection coin that rewards holders with BUSD
               reflections from taxes on every buy/sell. Every time there is a
@@ -136,12 +153,15 @@ const Busd = () => {
               back to holders in the form of the stable coin Binance USD (BUSD)
             </Typography>
             <Button
+              data-aos="fade-up"
+              data-aos-delay={200}
+              data-aos-duration="500"
               sx={{
                 fontFamily: "Bangers",
                 backgroundColor: "#FF0000",
-                fontSize:"24px",
+                fontSize: "24px",
                 lineHeight: "25.54px",
-                padding:'10px',
+                padding: "10px",
                 width: { xs: "50%", md: "30%" },
               }}
               color="error"

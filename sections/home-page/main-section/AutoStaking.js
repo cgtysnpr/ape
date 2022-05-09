@@ -5,6 +5,7 @@ import { Typography } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
 const AutoStaking = () => {
   const theme = createTheme();
 
@@ -20,10 +21,17 @@ const AutoStaking = () => {
   return (
     <>
       {/* web start */}
-      <div id="PRODUCTS">
+      <Box name="PRODUCTS" sx={{ position: "relative" }}>
         <Container fixed sx={{ display: { xs: "none", md: "block" } }}>
           <Grid container spacing={2}>
-            <Grid item xs={12} md={6}>
+            <Grid
+              data-aos="fade-right"
+              data-aos-delay={200}
+              data-aos-duration="500"
+              item
+              xs={12}
+              md={6}
+            >
               <Image
                 src="/images/image-1.png"
                 alt="Image-1"
@@ -43,6 +51,9 @@ const AutoStaking = () => {
               <Stack
                 sx={{ alignItems: { xs: "center", md: "flex-start" } }}
                 spacing={2}
+                data-aos="fade-left"
+                data-aos-delay={200}
+                data-aos-duration="500"
               >
                 <ThemeProvider theme={theme}>
                   <Typography
@@ -83,27 +94,6 @@ const AutoStaking = () => {
                 </Button>
               </Stack>
             </Grid>
-            <img
-              className="rose1"
-              src="/images/rose-1.png"
-              alt="rose-1"
-              width={419}
-              height={413}
-            />
-            <img
-              className="rose8"
-              src="/images/rose-8.png"
-              alt="rose-8"
-              width={502}
-              height={497}
-            />
-            <img
-              className="scream"
-              src="/images/scream.png"
-              alt="gorilla"
-              width={396}
-              height={720}
-            />
           </Grid>
         </Container>
         {/* web end */}
@@ -116,25 +106,34 @@ const AutoStaking = () => {
           >
             <ThemeProvider theme={theme}>
               <Typography
-                sx={{ fontFamily: "Bangers", color: "white",fontSize:'53px' }}
+                data-aos="fade-up"
+                data-aos-delay={200}
+                data-aos-duration="500"
+                sx={{ fontFamily: "Bangers", color: "white", fontSize: "53px" }}
               >
                 Auto-Staking
               </Typography>
             </ThemeProvider>
             <Image
+              data-aos="fade-up"
+              data-aos-delay={200}
+              data-aos-duration="500"
               src="/images/image-1.png"
               alt="Image-1"
               width={715}
               height={715}
             />
             <Typography
+              data-aos="fade-up"
+              data-aos-delay={200}
+              data-aos-duration="500"
               sx={{
                 fontFamily: "Poppins",
                 color: "white",
                 lineHeight: "30px",
                 textAlign: "center",
-                fontWeight:400,
-                fontSize:'20px',
+                fontWeight: 400,
+                fontSize: "20px",
               }}
             >
               $UAD is a rebase token that rewards holders every 3 seconds with a
@@ -142,12 +141,15 @@ const AutoStaking = () => {
               to receive rewards simply buy and hold."
             </Typography>
             <Button
+              data-aos="fade-up"
+              data-aos-delay={200}
+              data-aos-duration="500"
               sx={{
                 fontFamily: "Bangers",
                 backgroundColor: "#FF0000",
-                fontSize:"24px",
+                fontSize: "24px",
                 lineHeight: "25.54px",
-                padding:'10px',
+                padding: "10px",
                 width: { xs: "50%", md: "30%" },
               }}
               color="error"
@@ -157,7 +159,25 @@ const AutoStaking = () => {
             </Button>
           </Stack>
         </Container>
-      </div>
+        <img
+          data-aos="fade-left"
+          data-aos-delay={200}
+          className="rose1"
+          src="/images/rose-10.png"
+          alt="rose-1"
+          width={419}
+          height={413}
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-delay={400}
+          className="rose8"
+          src="/images/rose-11.png"
+          alt="rose-8"
+          width={388}
+          height={422}
+        />
+      </Box>
     </>
   );
 };

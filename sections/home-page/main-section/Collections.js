@@ -1,6 +1,7 @@
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Container, Typography, Box, Grid } from "@mui/material";
 import CollectionsCards from "../../../components/CollectionsCards";
+import Slider from "react-slick";
 const cardInformations = [
   {
     image: "images/collections-1.png",
@@ -20,7 +21,63 @@ const cardInformations = [
     description:
       "Cras posuere ultrices varius odio odio fames rutrum laoreet accumsan, aliquam rutrum est, felis odio.Cras posuere ultrices varius odio odio fames rutrum laoreet accumsan, aliquam rutrum est, felis odio.",
   },
+  {
+    image: "images/collections-1.png",
+    title: "Odio fames rutrum laoreet",
+    description:
+      "Cras posuere ultrices varius odio odio fames rutrum laoreet accumsan, aliquam rutrum est, felis odio.Cras posuere ultrices varius odio odio fames rutrum laoreet accumsan, aliquam rutrum est, felis odio.",
+  },
+  {
+    image: "images/collections-2.png",
+    title: "Odio fames rutrum laoreet",
+    description:
+      "Cras posuere ultrices varius odio odio fames rutrum laoreet accumsan, aliquam rutrum est, felis odio.Cras posuere ultrices varius odio odio fames rutrum laoreet accumsan, aliquam rutrum est, felis odio.",
+  },
+  {
+    image: "images/collections-3.png",
+    title: "Odio fames rutrum laoreet",
+    description:
+      "Cras posuere ultrices varius odio odio fames rutrum laoreet accumsan, aliquam rutrum est, felis odio.Cras posuere ultrices varius odio odio fames rutrum laoreet accumsan, aliquam rutrum est, felis odio.",
+  },
+  {
+    image: "images/collections-1.png",
+    title: "Odio fames rutrum laoreet",
+    description:
+      "Cras posuere ultrices varius odio odio fames rutrum laoreet accumsan, aliquam rutrum est, felis odio.Cras posuere ultrices varius odio odio fames rutrum laoreet accumsan, aliquam rutrum est, felis odio.",
+  },
+  {
+    image: "images/collections-2.png",
+    title: "Odio fames rutrum laoreet",
+    description:
+      "Cras posuere ultrices varius odio odio fames rutrum laoreet accumsan, aliquam rutrum est, felis odio.Cras posuere ultrices varius odio odio fames rutrum laoreet accumsan, aliquam rutrum est, felis odio.",
+  },
+  {
+    image: "images/collections-3.png",
+    title: "Odio fames rutrum laoreet",
+    description:
+      "Cras posuere ultrices varius odio odio fames rutrum laoreet accumsan, aliquam rutrum est, felis odio.Cras posuere ultrices varius odio odio fames rutrum laoreet accumsan, aliquam rutrum est, felis odio.",
+  },
 ];
+const settings = {
+  slidesToShow: 3,
+  infinite: true,
+  slidesToScroll: 1,
+  dots: true,
+  autoplay: true,
+  speed: 3000,
+  autoplaySpeed: 5000,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 735,
+      settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true, rows: 1 },
+    },
+    {
+      breakpoint: 1111,
+      settings: { slidesToShow: 2, slidesToScroll: 2, infinite: true },
+    },
+  ],
+};
 const Collections = () => {
   const theme = createTheme();
 
@@ -34,8 +91,8 @@ const Collections = () => {
     },
   };
   return (
-    <div id="ARTICLE">
-      <Box sx={{position:'relative', width:'100%'}}>
+    <div name="ARTICLE">
+      <Box sx={{ position: "relative", width: "100%" }}>
         <Container fixed>
           <Box
             sx={{
@@ -44,12 +101,15 @@ const Collections = () => {
               alignItems: "center",
               textAlign: "center",
               flexDirection: "column",
-              mb:20,
-              mt:20,
+              mb: 20,
+              mt: 20,
             }}
           >
             <ThemeProvider theme={theme}>
               <Typography
+                data-aos="fade-up"
+                data-aos-delay={200}
+                data-aos-duration="500"
                 sx={{
                   fontFamily: "Bangers",
                   color: "white",
@@ -60,19 +120,25 @@ const Collections = () => {
                 NFT collection
               </Typography>
               <Typography
+                data-aos="fade-up"
+                data-aos-delay={200}
+                data-aos-duration="500"
                 sx={{
                   fontFamily: "Bangers",
                   color: "white",
-                  fontWeight:400,
+                  fontWeight: 400,
                   fontSize: "53px",
                   display: { xs: "block", md: "none" },
                 }}
               >
-                Articles
+                ARTICLES
               </Typography>
             </ThemeProvider>
             <Box sx={{ width: { xs: "100%", md: "70%" }, mb: 2 }}>
               <Typography
+                data-aos="fade-up"
+                data-aos-delay={400}
+                data-aos-duration="500"
                 sx={{
                   fontFamily: "Poppins",
                   color: "white",
@@ -85,21 +151,21 @@ const Collections = () => {
               </Typography>
             </Box>
           </Box>
-          <Grid container spacing={4}>
+
+          <Slider
+            data-aos="zoom-out"
+            data-aos-delay={600}
+            data-aos-duration="500"
+            rows={1}
+            {...settings}
+          >
             {cardInformations.map((data, i) => (
-              <Grid key={"card" + i} item xs={12} md={4}>
+              <Box sx={{ p: 2 }} key={i}>
                 <CollectionsCards data={data} />
-              </Grid>
+              </Box>
             ))}
-          </Grid>
+          </Slider>
         </Container>
-        <img
-          className="rose9"
-          src="/images/rose-9.png"
-          alt="rose-9"
-          width={502}
-          height={497}
-        />
       </Box>
     </div>
   );

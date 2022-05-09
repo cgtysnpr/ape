@@ -28,18 +28,25 @@ const Jackpot = () => {
             md={6}
           >
             <Stack
+              data-aos="fade-right"
+              data-aos-delay={200}
+              data-aos-duration="1000"
               sx={{ alignItems: { xs: "center", md: "flex-start" } }}
               spacing={2}
             >
               <ThemeProvider theme={theme}>
                 <Typography
-                  sx={{ fontFamily: "Bangers", color: "white", fontSize:'53px' }}
+                  sx={{
+                    fontFamily: "Bangers",
+                    color: "white",
+                    fontSize: "53px",
+                  }}
                 >
                   The Jackpot
                 </Typography>
               </ThemeProvider>
               <Typography
-                sx={{ fontFamily: "Poppins", color: "white", fontSize:'30px' }}
+                sx={{ fontFamily: "Poppins", color: "white", fontSize: "30px" }}
               >
                 How to win, we decided to give $UAD holders another source of
                 income the $UAD Jackpot. On every buy, 4% tax is allocated to
@@ -52,6 +59,9 @@ const Jackpot = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Image
+              data-aos="fade-left"
+              data-aos-delay={200}
+              data-aos-duration="1000"
               src="/images/jackpot.png"
               alt="Jackpot"
               width={715}
@@ -70,18 +80,27 @@ const Jackpot = () => {
         >
           <ThemeProvider theme={theme}>
             <Typography
+              data-aos="fade-up"
+              data-aos-delay={200}
+              data-aos-duration="500"
               sx={{ fontFamily: "Bangers", color: "white", fontSize: "53px" }}
             >
               The Jackpot
             </Typography>
           </ThemeProvider>
           <Image
+            data-aos="fade-up"
+            data-aos-delay={200}
+            data-aos-duration="500"
             src="/images/jackpot.png"
             alt="Jackpot"
             width={715}
             height={715}
           />
           <Typography
+            data-aos="fade-up"
+            data-aos-delay={200}
+            data-aos-duration="500"
             sx={{
               fontFamily: "Poppins",
               color: "white",
