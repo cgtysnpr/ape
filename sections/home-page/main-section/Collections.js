@@ -65,7 +65,7 @@ const settings = {
   dots: true,
   autoplay: true,
   speed: 3000,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 3500,
   arrows: false,
   responsive: [
     {
