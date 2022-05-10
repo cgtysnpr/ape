@@ -12,16 +12,8 @@ import List from "@mui/material/List";
 import { makeStyles } from "@mui/styles";
 import PropTypes from "prop-types";
 import { Typography } from "@mui/material";
-import Link from "next/link";
-import {
-  Link as ScrollLink,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import Image from "next/Image";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 const pages = ["HOME", "PRODUCTS", "ARTICLE"];
 const useStyles = makeStyles({
   list: {
@@ -60,6 +52,9 @@ const Header = ({}) => {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
+      <Box sx={{ display: "flex", justifyContent: "center", pt: 2 }}>
+        <Image width={150} height={150} src="/images/logo.jpg" />
+      </Box>
       <List>
         {pages.map((text, index) => (
           <>
