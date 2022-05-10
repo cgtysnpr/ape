@@ -17,12 +17,12 @@ a {
   position: absolute;
   left: 40px;
   bottom: 10px;
+
 }
 .rose1 {
   position: absolute;
   right: 0;
   top: -140px;
-  z-index:999;
 }
 .rose2 {
   position: absolute;
@@ -33,7 +33,6 @@ a {
   position: absolute;
   right: 100px;
   top: 300px;
-  z-index: 999;
 }
 .rose3 {
   position: absolute;
@@ -44,7 +43,7 @@ a {
   position: absolute;
   left: 20px;
   top: 130px;
-  z-index: 999;
+
 }
 .rose4 {
   position: absolute;
@@ -55,31 +54,31 @@ a {
   position: absolute;
   right: 0;
   top: -250px;
-  z-index: 999;
+
 }
 .monopoly {
   position: absolute;
   right: 20px;
   bottom: -250px;
-  z-index: 999;
+
 }
 .rose5 {
   position: absolute;
   right: 0;
   bottom: -500px;
-  z-index: 999;
+
 }
 .rose6 {
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: 999;
+
 }
 .rose7 {
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 999;
+
 }
 .rose8 {
   position: absolute;
@@ -95,9 +94,8 @@ a {
   position: absolute;
   left: 20px;
   top: -50px;
-  z-index: 999;
 }
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1380px) {
   .gorilla {
     display: none;
   }

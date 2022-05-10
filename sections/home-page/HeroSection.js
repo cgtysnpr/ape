@@ -49,9 +49,10 @@ const HeroSection = (props) => {
           width: "100%",
           backgroundSize: "cover",
           backgroundPosition: "bottom",
+          position: "relative",
         }}
       >
-        <Container sx={{ paddingTop: 18 }} fixed>
+        <Container sx={{ paddingTop: 18, zIndex: 3 }} fixed>
           <Box
             sx={{
               display: "flex",
@@ -77,9 +78,11 @@ const HeroSection = (props) => {
                 md={12}
                 sx={{
                   pb: { xs: 0, md: 7 },
-                  ml: 4,
-                  pr: 2,
+                  ml: 6,
+                  pr: 0,
                   mt: { xs: 2, md: 0 },
+                  display: "flex",
+                  justifyContent: "center",
                 }}
               >
                 <Stack
@@ -87,6 +90,9 @@ const HeroSection = (props) => {
                   data-aos-delay={600}
                   direction="row"
                   spacing={1}
+                  sx={{
+                    width: { xs: "100%", md: "50%", lg: "65%", xl: "85%" },
+                  }}
                 >
                   <ThemeProvider theme={theme}>
                     <TextField
@@ -98,7 +104,7 @@ const HeroSection = (props) => {
                         style: { height: "100%", fontSize: "30px" },
                       }}
                       sx={{
-                        width: "70%",
+                        width: { xs: "60%", md: "70%", lg: "70%", xl: "70%" },
                         backgroundColor: "#000",
                         textColor: "#fff",
                         borderRadius: "10px",
@@ -116,7 +122,7 @@ const HeroSection = (props) => {
                       fontFamily: "Bangers",
                       fontSize: { xs: "29px", md: "33px" },
                       border: "4px solid #FF0000",
-                      width: { xs: "40%", md: "30%" },
+                      width: { xs: "40%", md: "30%", lg: "30%", xl: "30%" },
                       "&:hover": {
                         backgroundColor: "#000",
                         color: "#fff",
@@ -157,16 +163,24 @@ const HeroSection = (props) => {
             </Grid>
           </Box>
         </Container>
+        <Box
+          sx={{
+            width: 315,
+            height: 437,
+          }}
+          className={"gorilla"}
+        >
+          <Image
+            layout="responsive"
+            data-aos="fade-right"
+            data-aos-delay={800}
+            src="/images/Gorilla.png"
+            alt="gorilla"
+            width={315}
+            height={437}
+          />
+        </Box>
       </Box>
-      <img
-        data-aos="fade-right"
-        data-aos-delay={800}
-        className="gorilla"
-        src="/images/Gorilla.png"
-        alt="gorilla"
-        width={315}
-        height={437}
-      />
     </>
   );
 };
