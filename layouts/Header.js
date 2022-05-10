@@ -12,7 +12,7 @@ import List from "@mui/material/List";
 import { makeStyles } from "@mui/styles";
 import PropTypes from "prop-types";
 import { Typography } from "@mui/material";
-import Image from "next/Image";
+import Image from "next/image";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 const pages = ["HOME", "PRODUCTS", "ARTICLE"];
 const useStyles = makeStyles({
