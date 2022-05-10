@@ -114,7 +114,7 @@ const HeroSection = (props) => {
                       backgroundColor: "#000",
                       borderRadius: "10px",
                       fontFamily: "Bangers",
-                      fontSize: { xs: "28px", md: "33px" },
+                      fontSize: { xs: "29px", md: "33px" },
                       border: "4px solid #FF0000",
                       width: { xs: "40%", md: "30%" },
                       "&:hover": {
