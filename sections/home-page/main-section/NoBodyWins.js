@@ -1,7 +1,7 @@
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Container, Typography, Box } from "@mui/material";
 import Button from "@mui/material/Button";
-import Image from "next/Image";
+import Image from "next/image";
 const NoBodyWins = ({}) => {
   const theme = createTheme();
 
