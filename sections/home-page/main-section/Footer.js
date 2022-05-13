@@ -34,11 +34,12 @@ const Footer = () => {
               lineHeight: "45px",
               textAlign: "center",
               width: { xs: "100%", md: "50%" },
-              fontSize: "30px",
+              fontSize: { xs: "27px", md: "30px" },
               mt: 2,
             }}
           >
-            The saga continues...
+            Mi habitant sem nulla dolor sed sapien dui donec adipiscing diam
+            fusce viverra nisi neque
           </Typography>
           <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
             <Box
@@ -74,7 +75,7 @@ const Footer = () => {
               textAlign: "center",
               width: { xs: "80%", md: "50%" },
               mt: 2,
-              fontSize: "18px",
+              fontSize: { xs: "15", md: "18px" },
             }}
           >
             copyright © 2022 domotiica all rights reserved

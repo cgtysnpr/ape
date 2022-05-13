@@ -118,7 +118,7 @@ const Busd = () => {
                 data-aos="fade-up"
                 data-aos-delay={200}
                 data-aos-duration="500"
-                sx={{ fontFamily: "Bangers", color: "white", fontSize: "53px" }}
+                sx={{ fontFamily: "Bangers", color: "white", fontSize: "50px" }}
               >
                 BUSD reflections
               </Typography>
@@ -141,7 +141,7 @@ const Busd = () => {
                 color: "white",
                 lineHeight: "45px",
                 textAlign: "center",
-                fontSize: "30px",
+                fontSize: "27px",
               }}
               data-aos="fade-up"
               data-aos-delay={200}
@@ -159,7 +159,7 @@ const Busd = () => {
               sx={{
                 fontFamily: "Bangers",
                 backgroundColor: "#FF0000",
-                fontSize: "24px",
+                fontSize: "21px",
                 lineHeight: "25.54px",
                 padding: "10px",
                 width: { xs: "50%", md: "30%" },

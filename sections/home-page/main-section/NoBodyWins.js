@@ -27,7 +27,7 @@ const NoBodyWins = ({}) => {
               sx={{
                 fontFamily: "Poppins",
                 color: "white",
-                fontSize: "30px",
+                fontSize: "27px",
                 fontWeight: 700,
               }}
             >
@@ -39,7 +39,7 @@ const NoBodyWins = ({}) => {
               fontFamily: "Poppins",
               color: "white",
               lineHeight: "45px",
-              fontSize: "30px",
+              fontSize: "27px",
               mb: 2,
             }}
           >
@@ -50,12 +50,16 @@ const NoBodyWins = ({}) => {
             liquidity. The other 50% will stay in Jackpot for the next round.
           </Typography>
           <Button
+            data-aos="fade-up"
+            data-aos-delay={200}
+            data-aos-duration="500"
             sx={{
               fontFamily: "Bangers",
               backgroundColor: "#FF0000",
-              fontSize: { xs: "15px", md: "24px" },
+              fontSize: "21px",
               lineHeight: "25.54px",
-              width: { xs: "80%", md: "15%" },
+              padding: "10px",
+              width: { xs: "50%", md: "30%" },
             }}
             color="error"
             variant="contained"

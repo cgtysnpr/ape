@@ -83,7 +83,7 @@ const Jackpot = () => {
               data-aos="fade-up"
               data-aos-delay={200}
               data-aos-duration="500"
-              sx={{ fontFamily: "Bangers", color: "white", fontSize: "53px" }}
+              sx={{ fontFamily: "Bangers", color: "white", fontSize: "50px" }}
             >
               The Jackpot
             </Typography>
@@ -105,7 +105,7 @@ const Jackpot = () => {
               fontFamily: "Poppins",
               color: "white",
               textAlign: "center",
-              fontSize: "20px",
+              fontSize: "17px",
               lineHeight: "30px",
             }}
           >

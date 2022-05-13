@@ -127,11 +127,11 @@ const Collections = () => {
                   fontFamily: "Bangers",
                   color: "white",
                   fontWeight: 400,
-                  fontSize: "53px",
+                  fontSize: { xs: "50px", md: "53px" },
                   display: { xs: "block", md: "none" },
                 }}
               >
-                ARTICLES
+                NFT collection
               </Typography>
             </ThemeProvider>
             <Box sx={{ width: { xs: "100%", md: "70%" }, mb: 2 }}>
@@ -143,7 +143,7 @@ const Collections = () => {
                   fontFamily: "Poppins",
                   color: "white",
                   lineHeight: "30px",
-                  fontSize: "20px",
+                  fontSize: { xs: "17px", md: "20px" },
                 }}
               >
                 Cras posuere ultrices varius odio odio fames rutrum laoreet

@@ -120,7 +120,7 @@ const Lottery = () => {
                 data-aos="fade-up"
                 data-aos-delay={200}
                 data-aos-duration="500"
-                sx={{ fontFamily: "Bangers", color: "white", fontSize: "53px" }}
+                sx={{ fontFamily: "Bangers", color: "white", fontSize: "50px" }}
               >
                 The Lottery
               </Typography>
@@ -143,7 +143,7 @@ const Lottery = () => {
                 color: "white",
                 lineHeight: "45px",
                 textAlign: "center",
-                fontSize: "20px",
+                fontSize: "17px",
               }}
             >
               The UAD protocol will hold a lottery every 12 hours and everyone
@@ -164,7 +164,7 @@ const Lottery = () => {
               sx={{
                 fontFamily: "Bangers",
                 backgroundColor: "#FF0000",
-                fontSize: "24px",
+                fontSize: "21px",
                 lineHeight: "25.54px",
                 padding: "10px",
                 width: { xs: "50%", md: "30%" },

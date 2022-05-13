@@ -109,7 +109,11 @@ const AutoStaking = () => {
                 data-aos="fade-up"
                 data-aos-delay={200}
                 data-aos-duration="500"
-                sx={{ fontFamily: "Bangers", color: "white", fontSize: "53px" }}
+                sx={{
+                  fontFamily: "Bangers",
+                  color: "white",
+                  fontSize: { xs: "50px", md: "53px" },
+                }}
               >
                 Auto-Staking
               </Typography>
@@ -133,7 +137,7 @@ const AutoStaking = () => {
                 lineHeight: "30px",
                 textAlign: "center",
                 fontWeight: 400,
-                fontSize: "20px",
+                fontSize: "17px",
               }}
             >
               $UAD is a rebase token that rewards holders every 3 seconds with a
@@ -147,7 +151,7 @@ const AutoStaking = () => {
               sx={{
                 fontFamily: "Bangers",
                 backgroundColor: "#FF0000",
-                fontSize: "24px",
+                fontSize: "21px",
                 lineHeight: "25.54px",
                 padding: "10px",
                 width: { xs: "50%", md: "30%" },
