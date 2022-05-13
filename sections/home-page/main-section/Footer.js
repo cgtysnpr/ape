@@ -81,26 +81,28 @@ const Footer = () => {
           </Typography>
         </Box>
       </Container>
-      <img
-        className="rose6"
-        src="/images/rose-12.png"
-        alt="rose-6"
-        width={499}
-        height={494}
-        data-aos="fade-right"
-        data-aos-delay={200}
-        data-aos-duration="500"
-      />
-      <img
-        data-aos="fade-left"
-        data-aos-delay={200}
-        data-aos-duration="500"
-        className="rose7"
-        src="/images/rose-13.png"
-        alt="rose-7"
-        width={363}
-        height={360}
-      />
+      <Box className="rose6">
+        <Image
+          src="/images/rose-12.png"
+          alt="rose-6"
+          width={499}
+          height={494}
+          data-aos="fade-right"
+          data-aos-delay={200}
+          data-aos-duration="500"
+        />
+      </Box>
+      <Box className="rose7">
+        <Image
+          data-aos="fade-left"
+          data-aos-delay={200}
+          data-aos-duration="500"
+          src="/images/rose-13.png"
+          alt="rose-7"
+          width={363}
+          height={360}
+        />
+      </Box>
     </Box>
   );
 };

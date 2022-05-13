@@ -17,12 +17,15 @@ a {
   position: absolute;
   left: 40px;
   bottom: 10px;
-
+  width: 315px;
+  height: 437px;
 }
 .rose1 {
   position: absolute;
   right: 0;
   top: -140px;
+  width: 419px;
+  height: 413px;
 }
 .rose2 {
   position: absolute;
@@ -43,7 +46,6 @@ a {
   position: absolute;
   left: 20px;
   top: 130px;
-
 }
 .rose4 {
   position: absolute;
@@ -54,36 +56,39 @@ a {
   position: absolute;
   right: 0;
   top: -250px;
-
 }
 .monopoly {
   position: absolute;
   right: 20px;
   bottom: -250px;
-
+  width: 345px;
+  height: 190px;
 }
 .rose5 {
   position: absolute;
   right: 0;
   bottom: -500px;
-
 }
 .rose6 {
   position: absolute;
   left: 0;
   bottom: 0;
-
+  width: 499px;
+  height: 494px;
 }
 .rose7 {
   position: absolute;
   right: 0;
   bottom: 0;
-
+  width:363px;
+  height:360px;
 }
 .rose8 {
   position: absolute;
   left: 0;
   bottom: -200px;
+  width: 388px;
+  height: 422px;
 }
 .rose9 {
   position: absolute;
@@ -94,8 +99,156 @@ a {
   position: absolute;
   left: 20px;
   top: -50px;
+  width: 345px;
+  height: 190px;
 }
-@media only screen and (max-width: 1380px) {
+@media only screen and (max-width: 1800px) {
+  .diamond2 {
+    position: absolute;
+    left: 20px;
+    top: -120px;
+    width: 276px;
+    height: 121px;
+  }
+  .monopoly {
+    position: absolute;
+    right: 20px;
+    bottom: -100px;
+    width: 279px;
+    height: 121px;
+  }
+  .rose1 {
+    position: absolute;
+    right: 0;
+    top: -140px;
+    width: 350px;
+    height: 344px;
+  }
+  .rose8 {
+    position: absolute;
+    left: 0;
+    bottom: -200px;
+    width: 319px;
+    height: 353px;
+  }
+  .rose6 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 430px;
+    height: 425px;
+  }
+  .rose7 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width:294px;
+    height:291px;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .diamond2 {
+    position: absolute;
+    left: 20px;
+    top: -120px;
+    width: 207px;
+    height: 52px;
+  }
+  .monopoly {
+    position: absolute;
+    right: 20px;
+    bottom: -100px;
+    width: 210px;
+    height: 52px;
+  }
+  .rose1 {
+    position: absolute;
+    right: 0;
+    top: -140px;
+    width: 281px;
+    height: 275px;
+  }
+  .rose8 {
+    position: absolute;
+    left: 0;
+    bottom: -200px;
+    width: 250px;
+    height: 284px;
+  }
+  .rose6 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 361px;
+    height: 356px;
+  }
+  .rose7 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width:225px;
+    height:222px;
+  }
+  .gorilla {
+    position: absolute;
+    left: 40px;
+    bottom: 10px;
+    width: 246px;
+    height: 368px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .diamond2 {
+    position: absolute;
+    left: 20px;
+    top: -100px;
+    width: 200px;
+    height: 50px;
+  }
+  .monopoly {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    width: 210px;
+    height: 52px;
+  }
+  .rose1 {
+    position: absolute;
+    right: 0;
+    top: -140px;
+    width: 212px;
+    height: 275px;
+  }
+  .rose8 {
+    position: absolute;
+    left: 0;
+    bottom: -170px;
+    width: 181px;
+    height: 284px;
+  }
+  .rose6 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 292px;
+    height: 356px;
+  }
+  .rose7 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width:156px;
+    height:155px;
+  }
+  .gorilla {
+    position: absolute;
+    left: 40px;
+    bottom: 10px;
+    width: 246px;
+    height: 368px;
+  }
+}
+@media only screen and (max-width: 1000px) {
   .gorilla {
     display: none;
   }

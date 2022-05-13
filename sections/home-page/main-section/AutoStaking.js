@@ -85,7 +85,7 @@ const AutoStaking = () => {
                     backgroundColor: "#FF0000",
                     fontSize: { xs: "15px", md: "24px" },
                     lineHeight: "25.54px",
-                    width: { xs: "80%", md: "30%" },
+                    width: { xs: "80%", sm: "80%", md: "80%", lg: "30%" },
                   }}
                   color="error"
                   variant="contained"
@@ -163,24 +163,28 @@ const AutoStaking = () => {
             </Button>
           </Stack>
         </Container>
-        <img
-          data-aos="fade-left"
-          data-aos-delay={200}
-          className="rose1"
-          src="/images/rose-10.png"
-          alt="rose-1"
-          width={419}
-          height={413}
-        />
-        <img
-          data-aos="fade-right"
-          data-aos-delay={400}
-          className="rose8"
-          src="/images/rose-11.png"
-          alt="rose-8"
-          width={388}
-          height={422}
-        />
+        <Box className="rose1">
+          <Image
+            data-aos="fade-left"
+            data-aos-delay={200}
+            layout="responsive"
+            src="/images/rose-10.png"
+            alt="rose-1"
+            width={419}
+            height={413}
+          />
+        </Box>
+        <Box className="rose8">
+          <Image
+            data-aos="fade-right"
+            data-aos-delay={400}
+            layout="responsive"
+            src="/images/rose-11.png"
+            alt="rose-8"
+            width={388}
+            height={422}
+          />
+        </Box>
       </Box>
     </>
   );

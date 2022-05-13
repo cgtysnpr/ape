@@ -64,7 +64,7 @@ const HeroSection = (props) => {
             <Grid container mt={2} spacing={1}>
               <Grid item xs={12} md={12}>
                 <Image
-                  src="/images/logo.jpg"
+                  src="/images/hero-section-image.jpg"
                   alt="Logo"
                   width={379}
                   height={441}
@@ -94,7 +94,7 @@ const HeroSection = (props) => {
                 <Box
                   data-aos="fade-up"
                   data-aos-delay={800}
-                  sx={{ width: { xs: "100%", md: "60%" } }}
+                  sx={{ width: { xs: "100%", sm: "55%", md: "60%" } }}
                 >
                   <ThemeProvider theme={theme}>
                     <Typography
@@ -102,7 +102,12 @@ const HeroSection = (props) => {
                         fontFamily: "Bangers",
                         color: "white",
                         lineHeight: "52px",
-                        fontSize: { xs: "46px", md: "49px" },
+                        fontSize: {
+                          xs: "46px",
+                          sm: "46px",
+                          md: "46",
+                          lg: "49",
+                        },
                       }}
                     >
                       UNITED APES ARE ON A MISSION TO BRING STRENGTH AND
@@ -114,13 +119,7 @@ const HeroSection = (props) => {
             </Grid>
           </Box>
         </Container>
-        <Box
-          sx={{
-            width: 315,
-            height: 437,
-          }}
-          className={"gorilla"}
-        >
+        <Box className={"gorilla"}>
           <Image
             layout="responsive"
             data-aos="fade-right"

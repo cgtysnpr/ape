@@ -1,6 +1,7 @@
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Container, Typography, Box } from "@mui/material";
 import Button from "@mui/material/Button";
+import Image from "next/Image";
 const NoBodyWins = ({}) => {
   const theme = createTheme();
 
@@ -70,26 +71,29 @@ const NoBodyWins = ({}) => {
           </Button>
         </Box>
       </Container>
-      <img
-        data-aos="fade-right"
-        data-aos-delay={200}
-        data-aos-duration="500"
-        className="diamond2"
-        src="/images/diamond2.png"
-        alt="diamond-2"
-        width={345}
-        height={190}
-      />
-      <img
-        data-aos="fade-left"
-        data-aos-delay={200}
-        data-aos-duration="500"
-        className="monopoly"
-        src="/images/monopoly2.png"
-        alt="monopoly"
-        width={462}
-        height={296}
-      />
+      <Box className="diamond2">
+        <Image
+          data-aos="fade-right"
+          data-aos-delay={200}
+          data-aos-duration="500"
+          src="/images/diamond2.png"
+          alt="diamond-2"
+          layout="responsive"
+          width={345}
+          height={190}
+        />
+      </Box>
+      <Box className="monopoly">
+        <Image
+          data-aos="fade-left"
+          data-aos-delay={200}
+          data-aos-duration="500"
+          src="/images/monopoly2.png"
+          alt="monopoly"
+          width={462}
+          height={296}
+        />
+      </Box>
     </Box>
   );
 };

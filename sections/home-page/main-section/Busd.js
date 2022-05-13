@@ -88,7 +88,7 @@ const Busd = () => {
                     backgroundColor: "#FF0000",
                     fontSize: { xs: "15px", md: "24px" },
                     lineHeight: "25.54px",
-                    width: { xs: "80%", md: "30%" },
+                    width: { xs: "80%", sm: "80%", md: "80%", lg: "30%" },
                   }}
                   color="error"
                   variant="contained"

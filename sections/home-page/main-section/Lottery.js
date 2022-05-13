@@ -21,6 +21,7 @@ const Lottery = () => {
           width: "100%",
           position: "relative",
           mb: 10,
+          mt: 10,
           display: { xs: "none", md: "block" },
         }}
       >
@@ -71,7 +72,7 @@ const Lottery = () => {
                     backgroundColor: "#FF0000",
                     fontSize: { xs: "15px", md: "24px" },
                     lineHeight: "25.54px",
-                    width: { xs: "80%", md: "30%" },
+                    width: { xs: "80%", sm: "80%", md: "80%", lg: "30%" },
                   }}
                   color="error"
                   variant="contained"
