@@ -146,8 +146,8 @@ const Collections = () => {
                   fontSize: { xs: "17px", md: "20px" },
                 }}
               >
-                Cras posuere ultrices varius odio odio fames rutrum laoreet
-                accumsan, aliquam rutrum est, felis odio.
+                Top 500 contributors at launch will be airdropped NFTs worth
+                free lifetime entries into our Lottery.
               </Typography>
             </Box>
           </Box>

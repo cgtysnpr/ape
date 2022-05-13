@@ -24,6 +24,22 @@ const Footer = () => {
             width={144}
             height={168}
           />
+          <Typography
+            data-aos="fade-up"
+            data-aos-delay={400}
+            data-aos-duration="500"
+            sx={{
+              fontFamily: "Poppins",
+              color: "white",
+              lineHeight: "45px",
+              textAlign: "center",
+              width: { xs: "100%", md: "50%" },
+              fontSize: { xs: "27px", md: "30px" },
+              mt: 2,
+            }}
+          >
+            The saga continues...
+          </Typography>
           <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
             <Box
               data-aos="fade-up"
@@ -61,7 +77,7 @@ const Footer = () => {
               fontSize: { xs: "15", md: "18px" },
             }}
           >
-            copyright © 2022 all rights reserved
+            copyright © 2022 domotiica all rights reserved
           </Typography>
         </Box>
       </Container>

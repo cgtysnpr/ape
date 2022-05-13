@@ -27,11 +27,11 @@ const NoBodyWins = ({}) => {
               sx={{
                 fontFamily: "Poppins",
                 color: "white",
-                fontSize: "17px",
+                fontSize: { xs: "17px", md: "1.5rem" },
                 fontWeight: 700,
               }}
             >
-              If nobody wins:
+              United Buy Back
             </Typography>
           </ThemeProvider>
           <Typography
@@ -39,15 +39,17 @@ const NoBodyWins = ({}) => {
               fontFamily: "Poppins",
               color: "white",
               lineHeight: "45px",
-              fontSize: "17px",
+              fontSize: { xs: "17px", md: "1.5rem" },
               mb: 2,
             }}
           >
-            The Ticking Time Bomb - If the Jackpot reaches $100k and no one has
-            won 50% of the Jackpot is split three ways, 40% goes to buyback and
-            burn $UAD token, 40% goes to BUSD rewards, and 20% of the $50k which
-            is stored in the Jackpot as $UAD is sent to LP receiver to add
-            liquidity. The other 50% will stay in Jackpot for the next round.
+            If the Jackpot reaches $100k and no one has won 50% of the Jackpot
+            is split three ways: 40% goes to buyback and burn $UAD token 40%
+            goes to BUSD rewards 20% is sent to LP receiver to add liquidity The
+            other 50% of the $100k will stay in Jackpot for next round. After
+            the first United Buy Back we will raise the threshold by $50k the
+            next 2 round until it reaches $200k where it will stay and all the
+            same rules will apply.
           </Typography>
           <Button
             data-aos="fade-up"
