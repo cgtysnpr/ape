@@ -36,17 +36,22 @@ const Jackpot = () => {
             >
               <ThemeProvider theme={theme}>
                 <Typography
+                  variant="h3"
+                  gutterBottom
+                  component="div"
                   sx={{
                     fontFamily: "Bangers",
                     color: "white",
-                    fontSize: "53px",
                   }}
                 >
                   The Jackpot
                 </Typography>
               </ThemeProvider>
               <Typography
-                sx={{ fontFamily: "Poppins", color: "white", fontSize: "30px" }}
+                variant="h5"
+                gutterBottom
+                component="div"
+                sx={{ fontFamily: "Poppins", color: "white" }}
               >
                 How to win, we decided to give $UAD holders another source of
                 income the $UAD Jackpot. On every buy, 4% tax is allocated to

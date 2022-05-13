@@ -133,15 +133,12 @@ const Busd = () => {
               height={547}
             />
             <Typography
-              variant="h5"
-              gutterBottom
-              component="div"
               sx={{
                 fontFamily: "Poppins",
                 color: "white",
                 lineHeight: "45px",
                 textAlign: "center",
-                fontSize: "27px",
+                fontSize: "17px",
               }}
               data-aos="fade-up"
               data-aos-delay={200}
