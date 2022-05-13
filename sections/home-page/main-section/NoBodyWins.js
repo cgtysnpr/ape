@@ -27,7 +27,7 @@ const NoBodyWins = ({}) => {
               sx={{
                 fontFamily: "Poppins",
                 color: "white",
-                fontSize: "27px",
+                fontSize: "17px",
                 fontWeight: 700,
               }}
             >
@@ -39,7 +39,7 @@ const NoBodyWins = ({}) => {
               fontFamily: "Poppins",
               color: "white",
               lineHeight: "45px",
-              fontSize: "27px",
+              fontSize: "17px",
               mb: 2,
             }}
           >
