@@ -91,7 +91,7 @@ const Collections = () => {
     },
   };
   return (
-    <div name="ARTICLE">
+    <div name="NFT COLLECTIONS">
       <Box sx={{ position: "relative", width: "100%" }}>
         <Container fixed>
           <Box

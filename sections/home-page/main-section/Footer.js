@@ -24,23 +24,6 @@ const Footer = () => {
             width={144}
             height={168}
           />
-          <Typography
-            data-aos="fade-up"
-            data-aos-delay={400}
-            data-aos-duration="500"
-            sx={{
-              fontFamily: "Poppins",
-              color: "white",
-              lineHeight: "45px",
-              textAlign: "center",
-              width: { xs: "100%", md: "50%" },
-              fontSize: { xs: "27px", md: "30px" },
-              mt: 2,
-            }}
-          >
-            Mi habitant sem nulla dolor sed sapien dui donec adipiscing diam
-            fusce viverra nisi neque
-          </Typography>
           <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
             <Box
               data-aos="fade-up"
