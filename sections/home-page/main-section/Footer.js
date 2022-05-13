@@ -34,7 +34,7 @@ const Footer = () => {
               lineHeight: "45px",
               textAlign: "center",
               width: { xs: "100%", md: "50%" },
-              fontSize: { xs: "27px", md: "30px" },
+              fontSize: { xs: "15", md: "18px" },
               mt: 2,
             }}
           >
