@@ -34,12 +34,7 @@ const Busd = () => {
               xs={12}
               md={6}
             >
-              <Image
-                src="/images/gold.png"
-                alt="gold"
-                width={547}
-                height={547}
-              />
+              <Image src="/images/1.jpg" alt="gold" width={547} height={547} />
             </Grid>
             <Grid
               item
@@ -127,7 +122,7 @@ const Busd = () => {
               data-aos="fade-up"
               data-aos-delay={200}
               data-aos-duration="500"
-              src="/images/gold.png"
+              src="/images/1.jpg"
               alt="gold"
               width={547}
               height={547}
