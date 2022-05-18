@@ -34,7 +34,12 @@ const Busd = () => {
               xs={12}
               md={6}
             >
-              <Image src="/images/1.jpg" alt="gold" width={547} height={547} />
+              <Image
+                src="/images/busd.png"
+                alt="gold"
+                width={806}
+                height={423}
+              />
             </Grid>
             <Grid
               item
@@ -122,10 +127,10 @@ const Busd = () => {
               data-aos="fade-up"
               data-aos-delay={200}
               data-aos-duration="500"
-              src="/images/1.jpg"
+              src="/images/busd.png"
               alt="gold"
-              width={547}
-              height={547}
+              width={806}
+              height={423}
             />
             <Typography
               sx={{
