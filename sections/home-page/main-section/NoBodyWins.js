@@ -21,7 +21,7 @@ const NoBodyWins = ({}) => {
           data-aos="zoom-in"
           data-aos-delay={200}
           data-aos-duration="1000"
-          sx={{ textAlign: "center" }}
+          sx={{ textAlign: "center", p: 2 }}
         >
           <ThemeProvider theme={theme}>
             <Typography
@@ -30,9 +30,11 @@ const NoBodyWins = ({}) => {
                 color: "white",
                 fontSize: { xs: "17px", md: "1.5rem" },
                 fontWeight: 700,
+                textAlign: "left",
+                mb: 3,
               }}
             >
-              United Buy Back
+              United Buyback
             </Typography>
           </ThemeProvider>
           <Typography
@@ -41,16 +43,74 @@ const NoBodyWins = ({}) => {
               color: "white",
               lineHeight: "45px",
               fontSize: { xs: "17px", md: "1.5rem" },
-              mb: 2,
+              mb: 3,
+              textAlign: "left",
             }}
           >
             If the Jackpot reaches $100k and no one has won 50% of the Jackpot
-            is split three ways: 40% goes to buyback and burn $UAD token 40%
-            goes to BUSD rewards 20% is sent to LP receiver to add liquidity The
-            other 50% of the $100k will stay in Jackpot for next round. After
-            the first United Buy Back we will raise the threshold by $50k the
-            next 2 round until it reaches $200k where it will stay and all the
-            same rules will apply.
+            is split three ways:
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Poppins",
+              color: "white",
+              lineHeight: "45px",
+              fontSize: { xs: "17px", md: "1.5rem" },
+              mb: 3,
+              textAlign: "left",
+            }}
+          >
+            35% goes to buyback and burn $UAD token
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Poppins",
+              color: "white",
+              lineHeight: "45px",
+              fontSize: { xs: "17px", md: "1.5rem" },
+              mb: 3,
+              textAlign: "left",
+            }}
+          >
+            30% goes to BUSD rewards distributed to all holders
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Poppins",
+              color: "white",
+              lineHeight: "45px",
+              fontSize: { xs: "17px", md: "1.5rem" },
+              mb: 3,
+              textAlign: "left",
+            }}
+          >
+            35% is sent to LP receiver to add liquidity
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Poppins",
+              color: "white",
+              lineHeight: "45px",
+              fontSize: { xs: "17px", md: "1.5rem" },
+              mb: 2,
+              textAlign: "left",
+            }}
+          >
+            The other 50% will stay in Jackpot for next round.
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Poppins",
+              color: "white",
+              lineHeight: "45px",
+              fontSize: { xs: "17px", md: "1.5rem" },
+              mb: 3,
+              textAlign: "left",
+            }}
+          >
+            After the first United Buyback we will raise the threshold by $50k
+            the next 2 round until it reaches $200k where it will stay and all
+            the same rules will apply.
           </Typography>
           <Button
             sx={{
