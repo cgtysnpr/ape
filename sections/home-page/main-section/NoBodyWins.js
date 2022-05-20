@@ -34,7 +34,7 @@ const NoBodyWins = ({}) => {
                 mb: 3,
               }}
             >
-              United Buyback
+              United Buyback 🌎
             </Typography>
           </ThemeProvider>
           <Typography
@@ -60,7 +60,7 @@ const NoBodyWins = ({}) => {
               textAlign: "left",
             }}
           >
-            35% goes to buyback and burn $UAD token
+            35% goes to buyback and burn $UAD token 🔥
           </Typography>
           <Typography
             sx={{
@@ -72,7 +72,7 @@ const NoBodyWins = ({}) => {
               textAlign: "left",
             }}
           >
-            30% goes to BUSD rewards distributed to all holders
+            30% goes to BUSD rewards distributed to all holders 🪙
           </Typography>
           <Typography
             sx={{
@@ -84,7 +84,7 @@ const NoBodyWins = ({}) => {
               textAlign: "left",
             }}
           >
-            35% is sent to LP receiver to add liquidity
+            35% is sent to LP receiver to add liquidity 🏛️
           </Typography>
           <Typography
             sx={{
@@ -96,7 +96,7 @@ const NoBodyWins = ({}) => {
               textAlign: "left",
             }}
           >
-            The other 50% will stay in Jackpot for next round.
+            The other 50% will stay in Jackpot for next round. 🎊🎊🎊
           </Typography>
           <Typography
             sx={{
