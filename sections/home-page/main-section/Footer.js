@@ -77,7 +77,7 @@ const Footer = () => {
               fontSize: { xs: "15", md: "18px" },
             }}
           >
-            copyright © 2022 domotiica all rights reserved
+            copyright © 2022 all rights reserved
           </Typography>
         </Box>
       </Container>
