@@ -96,21 +96,7 @@ const NoBodyWins = ({}) => {
               textAlign: "left",
             }}
           >
-            The other 50% will stay in Jackpot for next round. 🎊🎊🎊
-          </Typography>
-          <Typography
-            sx={{
-              fontFamily: "Poppins",
-              color: "white",
-              lineHeight: "45px",
-              fontSize: { xs: "17px", md: "1.5rem" },
-              mb: 3,
-              textAlign: "left",
-            }}
-          >
-            After the first United Buyback we will raise the threshold by $50k
-            the next 2 round until it reaches $200k where it will stay and all
-            the same rules will apply.
+            The other 50% will stay in Jackpot for next round.🎰
           </Typography>
           <Button
             sx={{
