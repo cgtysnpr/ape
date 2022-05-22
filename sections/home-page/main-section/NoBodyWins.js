@@ -96,7 +96,7 @@ const NoBodyWins = ({}) => {
               textAlign: "left",
             }}
           >
-            The other 50% will stay in Jackpot for next round.🎰
+            The other 50% will stay in Jackpot for next round. 🎰
           </Typography>
           <Button
             sx={{
