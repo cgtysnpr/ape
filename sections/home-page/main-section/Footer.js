@@ -46,21 +46,30 @@ const Footer = () => {
               data-aos-delay={600}
               data-aos-duration="500"
             >
-              <FacebookIcon sx={{ color: "white" }} />
+              <a
+                href="https://www.facebook.com/unitedapesdefi?_rdc=1&_rdr"
+                target="_blank"
+              >
+                <FacebookIcon sx={{ color: "white" }} />{" "}
+              </a>
             </Box>
             <Box
               data-aos="fade-up"
               data-aos-delay={800}
               data-aos-duration="500"
             >
-              <InstagramIcon sx={{ color: "white" }} />
+              <a href="https://instagram.com/unitedapesdefi" target="_blank">
+                <InstagramIcon sx={{ color: "white" }} />
+              </a>
             </Box>
             <Box
               data-aos="fade-up"
               data-aos-delay={1000}
               data-aos-duration="500"
             >
-              <TwitterIcon sx={{ color: "white" }} />
+              <a href="https://twitter.com/unitedapesdefi" target="_blank">
+                <TwitterIcon sx={{ color: "white" }} />
+              </a>
             </Box>
           </Stack>
           <Typography
