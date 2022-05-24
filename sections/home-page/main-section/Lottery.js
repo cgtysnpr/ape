@@ -59,9 +59,7 @@ const Lottery = () => {
                   everyone can participate. NFT holders will gain free entries
                   depending on the level of NFTs they hold. Non-NFT holders will
                   have to pay a fee with the $UAD token to gain entries. We will
-                  burn 10% of all winnings. The Lottery Treasury will receive
-                  positive rebase rewards but there will be no BUSD reflections
-                  going there.
+                  burn 10% of all winnings.
                 </Typography>
                 <Button
                   sx={{
@@ -148,8 +146,7 @@ const Lottery = () => {
               can participate. NFT holders will gain free entries depending on
               the level of NFTs they hold. Non-NFT holders will have to pay a
               fee with the $UAD token to gain entries. We will burn 10% of all
-              winnings. The Lottery Treasury will receive positive rebase
-              rewards but there will be no BUSD reflections going there.
+              winnings.
             </Typography>
             <Button
               data-aos="fade-up"
