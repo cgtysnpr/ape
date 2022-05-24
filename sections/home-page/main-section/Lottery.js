@@ -58,12 +58,10 @@ const Lottery = () => {
                   The UAD protocol will hold a lottery every 12 hours and
                   everyone can participate. NFT holders will gain free entries
                   depending on the level of NFTs they hold. Non-NFT holders will
-                  have to pay a fee with the $UAD token to gain entries. Will be
-                  at the end of 12 hours. Winners of lottery drawings will be
-                  paid from the Lottery treasury with $UAD, we will burn 10% of
-                  all winnings. The Lottery Treasury will receive positive
-                  rebase rewards but there will be no BUSD reflections going
-                  there.
+                  have to pay a fee with the $UAD token to gain entries. We will
+                  burn 10% of all winnings. The Lottery Treasury will receive
+                  positive rebase rewards but there will be no BUSD reflections
+                  going there.
                 </Typography>
                 <Button
                   sx={{
@@ -149,11 +147,9 @@ const Lottery = () => {
               The UAD protocol will hold a lottery every 12 hours and everyone
               can participate. NFT holders will gain free entries depending on
               the level of NFTs they hold. Non-NFT holders will have to pay a
-              fee with the $UAD token to gain entries. Will be at the end of 12
-              hours. Winners of lottery drawings will be paid from the Lottery
-              treasury with $UAD, we will burn 10% of all winnings. The Lottery
-              Treasury will receive positive rebase rewards but there will be no
-              BUSD reflections going there.
+              fee with the $UAD token to gain entries. We will burn 10% of all
+              winnings. The Lottery Treasury will receive positive rebase
+              rewards but there will be no BUSD reflections going there.
             </Typography>
             <Button
               data-aos="fade-up"
