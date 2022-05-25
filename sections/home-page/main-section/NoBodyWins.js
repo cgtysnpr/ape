@@ -1,5 +1,5 @@
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Container, Typography, Box } from "@mui/material";
+import { Container, Typography, Box, Grid } from "@mui/material";
 import Button from "@mui/material/Button";
 import Image from "next/image";
 const NoBodyWins = ({}) => {
@@ -18,6 +18,24 @@ const NoBodyWins = ({}) => {
     <Box sx={{ width: "100%", position: "relative", mt: 15 }}>
       <Container fixed>
         <Box
+          item
+          xs={12}
+          sx={{
+            display: { xs: "none", md: "flex" },
+            justifyContent: "center",
+          }}
+        >
+          <Image
+            data-aos="fade-right"
+            data-aos-delay={200}
+            data-aos-duration="500"
+            src="/images/diamond2.png"
+            alt="diamond-2"
+            width={345}
+            height={190}
+          />
+        </Box>
+        <Box
           data-aos="zoom-in"
           data-aos-delay={200}
           data-aos-duration="1000"
@@ -30,7 +48,7 @@ const NoBodyWins = ({}) => {
                 color: "white",
                 fontSize: { xs: "17px", md: "1.5rem" },
                 fontWeight: 700,
-                textAlign: "left",
+                textAlign: "center",
                 mb: 3,
               }}
             >
@@ -44,7 +62,7 @@ const NoBodyWins = ({}) => {
               lineHeight: "45px",
               fontSize: { xs: "17px", md: "1.5rem" },
               mb: 3,
-              textAlign: "left",
+              textAlign: "center",
             }}
           >
             If the Jackpot reaches $100k and no one has won 50% of the Jackpot
@@ -57,7 +75,7 @@ const NoBodyWins = ({}) => {
               lineHeight: "45px",
               fontSize: { xs: "17px", md: "1.5rem" },
               mb: 3,
-              textAlign: "left",
+              textAlign: "center",
             }}
           >
             - 35% goes to buyback and burn $UAD token 🔥
@@ -69,7 +87,7 @@ const NoBodyWins = ({}) => {
               lineHeight: "45px",
               fontSize: { xs: "17px", md: "1.5rem" },
               mb: 3,
-              textAlign: "left",
+              textAlign: "center",
             }}
           >
             - 35% is sent to LP receiver to add liquidity 🏛️
@@ -81,18 +99,22 @@ const NoBodyWins = ({}) => {
               lineHeight: "45px",
               fontSize: { xs: "17px", md: "1.5rem" },
               mb: 3,
-              textAlign: "left",
+              textAlign: "center",
             }}
           >
             - 30% goes to BUSD rewards distributed to all holders 🪙
           </Typography>
           <Button
+            data-aos="fade-up"
+            data-aos-delay={200}
+            data-aos-duration="500"
             sx={{
               fontFamily: "Bangers",
               backgroundColor: "#FF0000",
-              fontSize: { xs: "21px", md: "24px" },
+              fontSize: "21px",
               lineHeight: "25.54px",
-              width: { xs: "50%", sm: "17%", md: "17%", lg: "17%" },
+              padding: "10px",
+              width: { xs: "50%", md: "30%" },
             }}
             color="error"
             variant="contained"
@@ -101,29 +123,6 @@ const NoBodyWins = ({}) => {
           </Button>
         </Box>
       </Container>
-      <Box className="diamond2">
-        <Image
-          data-aos="fade-right"
-          data-aos-delay={200}
-          data-aos-duration="500"
-          src="/images/diamond2.png"
-          alt="diamond-2"
-          layout="responsive"
-          width={345}
-          height={190}
-        />
-      </Box>
-      <Box className="monopoly">
-        <Image
-          data-aos="fade-left"
-          data-aos-delay={200}
-          data-aos-duration="500"
-          src="/images/monopoly2.png"
-          alt="monopoly"
-          width={462}
-          height={296}
-        />
-      </Box>
     </Box>
   );
 };

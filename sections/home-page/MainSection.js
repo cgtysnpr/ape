@@ -22,9 +22,9 @@ const MainSection = () => {
       >
         <Box sx={{ pt: 10 }}>
           <AutoStaking />
+          <Busd />
           <Jackpot />
           <NoBodyWins />
-          <Busd />
           <Lottery />
           <Collections />
           <Footer />

@@ -21,80 +21,68 @@ const AutoStaking = () => {
   return (
     <>
       {/* web start */}
-      <Box name="PRODUCTS" sx={{ position: "relative" }}>
+      <Box name="PRODUCTS" sx={{ position: "relative", marginBottom: 20 }}>
         <Container fixed sx={{ display: { xs: "none", md: "block" } }}>
-          <Grid container spacing={2}>
-            <Grid
-              data-aos="fade-right"
-              data-aos-delay={200}
-              data-aos-duration="500"
-              item
-              xs={12}
-              md={6}
-            >
+          <Stack direction="row">
+            <Box sx={{ pt: 4 }}>
               <Image
                 src="/images/image-1.png"
                 alt="Image-1"
                 width={715}
                 height={715}
               />
-            </Grid>
-            <Grid
-              item
+            </Box>
+            <Box
+              data-aos="fade-right"
+              data-aos-delay={200}
+              data-aos-duration="500"
               sx={{
-                display: "flex",
-                alignItems: "center",
+                textAlign: "left",
+                p: 2,
+                width: { xs: "100%", sm: "60%", md: "100%", lg: "70%" },
+                mr: 20,
               }}
-              xs={12}
-              md={6}
             >
-              <Stack
-                sx={{ alignItems: { xs: "center", md: "flex-start" } }}
-                spacing={2}
-                data-aos="fade-left"
-                data-aos-delay={200}
-                data-aos-duration="500"
-              >
-                <ThemeProvider theme={theme}>
-                  <Typography
-                    variant="h3"
-                    gutterBottom
-                    component="div"
-                    sx={{ fontFamily: "Bangers", color: "white" }}
-                  >
-                    Auto-Staking
-                  </Typography>
-                </ThemeProvider>
+              <ThemeProvider theme={theme}>
                 <Typography
-                  variant="h5"
+                  variant="h3"
                   gutterBottom
                   component="div"
-                  sx={{
-                    fontFamily: "Poppins",
-                    color: "white",
-                    lineHeight: "45px",
-                  }}
+                  sx={{ fontFamily: "Bangers", color: "white" }}
                 >
-                  $UAD is a rebase token that rewards holders every 3 seconds
-                  with a sustainable 191,021% APY. No need to connect the wallet
-                  to a dApp to receive rewards simply buy and hold."
+                  Auto-Staking
                 </Typography>
-                <Button
-                  sx={{
-                    fontFamily: "Bangers",
-                    backgroundColor: "#FF0000",
-                    fontSize: { xs: "15px", md: "24px" },
-                    lineHeight: "25.54px",
-                    width: { xs: "80%", sm: "80%", md: "80%", lg: "30%" },
-                  }}
-                  color="error"
-                  variant="contained"
-                >
-                  LEARN MORE
-                </Button>
-              </Stack>
-            </Grid>
-          </Grid>
+              </ThemeProvider>
+              <Typography
+                variant="h5"
+                gutterBottom
+                component="div"
+                sx={{
+                  fontFamily: "Poppins",
+                  color: "white",
+                  lineHeight: "45px",
+                  textAlign: "left",
+                }}
+              >
+                $UAD is a rebase token that rewards holders every 3 seconds with
+                a sustainable 191,021% APY. No need to connect the wallet to a
+                dApp to receive rewards simply buy and hold."
+              </Typography>
+              <Button
+                sx={{
+                  fontFamily: "Bangers",
+                  backgroundColor: "#FF0000",
+                  fontSize: { xs: "15px", md: "24px" },
+                  lineHeight: "25.54px",
+                  width: { xs: "80%", sm: "80%", md: "80%", lg: "30%" },
+                }}
+                color="error"
+                variant="contained"
+              >
+                LEARN MORE
+              </Button>
+            </Box>
+          </Stack>
         </Container>
         {/* web end */}
         {/* -------------- */}

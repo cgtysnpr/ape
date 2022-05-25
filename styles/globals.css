@@ -59,8 +59,8 @@ a {
 }
 .monopoly {
   position: absolute;
-  right: 20px;
-  bottom: -250px;
+  right: 100px;
+  top: -200px;
   width: 345px;
   height: 190px;
 }
@@ -112,8 +112,8 @@ a {
   }
   .monopoly {
     position: absolute;
-    right: 20px;
-    bottom: -100px;
+    right: 50px;
+    top: -100px;
     width: 279px;
     height: 121px;
   }
@@ -156,8 +156,8 @@ a {
   }
   .monopoly {
     position: absolute;
-    right: 20px;
-    bottom: -100px;
+    right: 50px;
+    top: -100px;
     width: 210px;
     height: 52px;
   }
@@ -207,8 +207,8 @@ a {
   }
   .monopoly {
     position: absolute;
-    right: 20px;
-    bottom: 0px;
+    right: 50px;
+    top: -100px;
     width: 210px;
     height: 52px;
   }

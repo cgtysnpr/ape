@@ -99,6 +99,17 @@ const Busd = () => {
             </Grid>
           </Grid>
         </Container>
+        <Box className="monopoly">
+          <Image
+            data-aos="fade-left"
+            data-aos-delay={200}
+            data-aos-duration="500"
+            src="/images/monopoly2.png"
+            alt="monopoly"
+            width={462}
+            height={296}
+          />
+        </Box>
       </Box>
       {/* web end */}
       {/* ----------- */}
