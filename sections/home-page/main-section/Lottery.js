@@ -55,11 +55,46 @@ const Lottery = () => {
                     lineHeight: "45px",
                   }}
                 >
-                  The UAD protocol will hold a lottery every 12 hours and
-                  everyone can participate. NFT holders will gain free entries
-                  depending on the level of NFTs they hold. Non-NFT holders will
-                  have to pay a fee with the $UAD token to gain entries. We will
-                  burn 10% of all winnings.
+                  - UAD will hold a lottery every 12 hours and everyone can
+                  participate 🔔
+                </Typography>
+                <Typography
+                  variant="h5"
+                  gutterBottom
+                  component="div"
+                  sx={{
+                    fontFamily: "Poppins",
+                    color: "white",
+                    lineHeight: "45px",
+                  }}
+                >
+                  - NFT holders will have a fixed amount of free entries into
+                  every lottery determined by the level of NFTs they hold 🎟
+                </Typography>
+                <Typography
+                  variant="h5"
+                  gutterBottom
+                  component="div"
+                  sx={{
+                    fontFamily: "Poppins",
+                    color: "white",
+                    lineHeight: "45px",
+                  }}
+                >
+                  - Non-NFT holders will have to pay a fee with $UAD to gain
+                  entries 💵
+                </Typography>
+                <Typography
+                  variant="h5"
+                  gutterBottom
+                  component="div"
+                  sx={{
+                    fontFamily: "Poppins",
+                    color: "white",
+                    lineHeight: "45px",
+                  }}
+                >
+                  - We will burn 10% of all winnings 🔥
                 </Typography>
                 <Button
                   sx={{
@@ -142,11 +177,52 @@ const Lottery = () => {
                 fontSize: "17px",
               }}
             >
-              The UAD protocol will hold a lottery every 12 hours and everyone
-              can participate. NFT holders will gain free entries depending on
-              the level of NFTs they hold. Non-NFT holders will have to pay a
-              fee with the $UAD token to gain entries. We will burn 10% of all
-              winnings.
+              - UAD will hold a lottery every 12 hours and everyone can
+              participate 🔔
+            </Typography>
+            <Typography
+              data-aos="fade-up"
+              data-aos-delay={200}
+              data-aos-duration="500"
+              sx={{
+                fontFamily: "Poppins",
+                color: "white",
+                lineHeight: "45px",
+                textAlign: "center",
+                fontSize: "17px",
+              }}
+            >
+              - NFT holders will have a fixed amount of free entries into every
+              lottery determined by the level of NFTs they hold 🎟
+            </Typography>
+            <Typography
+              data-aos="fade-up"
+              data-aos-delay={200}
+              data-aos-duration="500"
+              sx={{
+                fontFamily: "Poppins",
+                color: "white",
+                lineHeight: "45px",
+                textAlign: "center",
+                fontSize: "17px",
+              }}
+            >
+              - Non-NFT holders will have to pay a fee with $UAD to gain entries
+              💵
+            </Typography>
+            <Typography
+              data-aos="fade-up"
+              data-aos-delay={200}
+              data-aos-duration="500"
+              sx={{
+                fontFamily: "Poppins",
+                color: "white",
+                lineHeight: "45px",
+                textAlign: "center",
+                fontSize: "17px",
+              }}
+            >
+              - We will burn 10% of all winnings 🔥
             </Typography>
             <Button
               data-aos="fade-up"
