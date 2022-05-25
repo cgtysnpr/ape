@@ -52,7 +52,7 @@ const NoBodyWins = ({}) => {
                 mb: 3,
               }}
             >
-              United Buyback! 🌎 ✊
+              United Buyback! 🌎
             </Typography>
           </ThemeProvider>
           <Typography
@@ -65,8 +65,8 @@ const NoBodyWins = ({}) => {
               textAlign: "center",
             }}
           >
-            If the Jackpot reaches $100k and no one has won 50% of the Jackpot
-            is split three ways: 🪓
+            If the Jackpot reaches it's threshold at $100k and no one has won
+            50% of the Jackpot is split three ways: 🪓
           </Typography>
           <Typography
             sx={{
@@ -102,7 +102,8 @@ const NoBodyWins = ({}) => {
               textAlign: "center",
             }}
           >
-            - 30% goes to BUSD rewards distributed to all holders 🪙
+            - 30% goes to BUSD rewards distributed to all holders{" "}
+            <Image width={25} height={25} src={"/images/coin-emoji.png"} />
           </Typography>
           <Button
             data-aos="fade-up"
