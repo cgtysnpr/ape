@@ -3,6 +3,9 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Image from "next/image";
+import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Footer = () => {
   return (
     <Box sx={{ width: "100%", position: "relative", mt: 10, pb: 10 }}>
@@ -69,6 +72,16 @@ const Footer = () => {
             >
               <a href="https://twitter.com/unitedapesdefi" target="_blank">
                 <TwitterIcon sx={{ color: "white" }} />
+              </a>
+            </Box>
+            <Box
+              data-aos="fade-up"
+              data-aos-delay={1000}
+              data-aos-duration="700"
+              sx={{ pt: 0.5 }}
+            >
+              <a href="https://discord.com/invite/3u5dtQ83" target="_blank">
+                <FontAwesomeIcon style={{ color: "white" }} icon={faDiscord} />
               </a>
             </Box>
           </Stack>

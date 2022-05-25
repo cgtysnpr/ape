@@ -160,24 +160,6 @@ const Header = ({}) => {
               </>
             ))}
           </Box>
-
-          <Box
-            data-aos="fade-down"
-            sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}
-          >
-            <Button
-              sx={{
-                fontFamily: "Bangers",
-                backgroundColor: "#FF0000",
-                fontSize: { xs: "15px", md: "33px" },
-                lineHeight: "35.11px",
-              }}
-              color="error"
-              variant="contained"
-            >
-              connect wallet
-            </Button>
-          </Box>
         </Toolbar>
       </Container>
     </AppBar>
