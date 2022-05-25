@@ -52,7 +52,7 @@ const NoBodyWins = ({}) => {
                 mb: 3,
               }}
             >
-              United Buyback! 🌎
+              United Buyback 🌎
             </Typography>
           </ThemeProvider>
           <Typography
