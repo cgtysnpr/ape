@@ -2,11 +2,13 @@
   "name": "ape",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ajansistanbul34.com",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",

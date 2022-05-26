@@ -14,7 +14,7 @@ import PropTypes from "prop-types";
 import { Typography } from "@mui/material";
 import Image from "next/image";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-const pages = ["HOME", "PRODUCTS", "NFT COLLECTIONS"];
+const pages = ["HOME", "PRODUCTS", "NFT COLLECTIONS", "WHITE PAPER"];
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -58,26 +58,45 @@ const Header = ({}) => {
       <List>
         {pages.map((text, index) => (
           <>
-            <ScrollLink
-              activeClass="active"
-              to={text}
-              spy={true}
-              onClick={toggleDrawer(anchor, false)}
-              smooth={true}
-              duration={500}
-            >
-              <ListItem sx={{ mb: 2, mt: 2 }} button>
-                <Typography
-                  sx={{
-                    fontFamily: "Bangers",
-                    color: "#FF0000",
-                    fontSize: "30px",
-                  }}
-                >
-                  {text}
-                </Typography>
-              </ListItem>
-            </ScrollLink>
+            {text === "WHITE PAPER" ? (
+              <a
+                href="https://klaydoe-uad.gitbook.io/united-apes-defi/"
+                target="_blank"
+              >
+                <ListItem sx={{ mb: 2, mt: 2 }} button>
+                  <Typography
+                    sx={{
+                      fontFamily: "Bangers",
+                      color: "#FF0000",
+                      fontSize: "30px",
+                    }}
+                  >
+                    {text}
+                  </Typography>
+                </ListItem>
+              </a>
+            ) : (
+              <ScrollLink
+                activeClass="active"
+                to={text}
+                spy={true}
+                onClick={toggleDrawer(anchor, false)}
+                smooth={true}
+                duration={500}
+              >
+                <ListItem sx={{ mb: 2, mt: 2 }} button>
+                  <Typography
+                    sx={{
+                      fontFamily: "Bangers",
+                      color: "#FF0000",
+                      fontSize: "30px",
+                    }}
+                  >
+                    {text}
+                  </Typography>
+                </ListItem>
+              </ScrollLink>
+            )}
           </>
         ))}
       </List>
@@ -124,39 +143,72 @@ const Header = ({}) => {
           >
             {pages.map((page, i) => (
               <>
-                <ScrollLink
-                  activeClass="active"
-                  to={page}
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  <Button
-                    data-aos="fade-down"
-                    data-aos-delay={i * 100}
-                    sx={
-                      i === 0
-                        ? {
-                            fontFamily: "Bangers",
-                            my: 2,
-                            color: "white",
-                            display: "block",
-                            fontSize: { xs: "15px", md: "33px" },
-                            padding: "-5px",
-                            borderBottom: "4px solid #FF0000",
-                          }
-                        : {
-                            fontFamily: "Bangers",
-                            my: 2,
-                            color: "white",
-                            display: "block",
-                            fontSize: { xs: "15px", md: "33px" },
-                          }
-                    }
+                {page === "WHITE PAPER" ? (
+                  <a
+                    href="https://klaydoe-uad.gitbook.io/united-apes-defi/"
+                    target="_blank"
                   >
-                    {page}
-                  </Button>
-                </ScrollLink>
+                    <Button
+                      data-aos="fade-down"
+                      data-aos-delay={i * 100}
+                      sx={
+                        i === 0
+                          ? {
+                              fontFamily: "Bangers",
+                              my: 2,
+                              color: "white",
+                              display: "block",
+                              fontSize: { xs: "15px", md: "33px" },
+                              padding: "-5px",
+                              borderBottom: "4px solid #FF0000",
+                            }
+                          : {
+                              fontFamily: "Bangers",
+                              my: 2,
+                              color: "white",
+                              display: "block",
+                              fontSize: { xs: "15px", md: "33px" },
+                            }
+                      }
+                    >
+                      {page}
+                    </Button>
+                  </a>
+                ) : (
+                  <ScrollLink
+                    activeClass="active"
+                    to={page}
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    <Button
+                      data-aos="fade-down"
+                      data-aos-delay={i * 100}
+                      sx={
+                        i === 0
+                          ? {
+                              fontFamily: "Bangers",
+                              my: 2,
+                              color: "white",
+                              display: "block",
+                              fontSize: { xs: "15px", md: "33px" },
+                              padding: "-5px",
+                              borderBottom: "4px solid #FF0000",
+                            }
+                          : {
+                              fontFamily: "Bangers",
+                              my: 2,
+                              color: "white",
+                              display: "block",
+                              fontSize: { xs: "15px", md: "33px" },
+                            }
+                      }
+                    >
+                      {page}
+                    </Button>
+                  </ScrollLink>
+                )}
               </>
             ))}
           </Box>
