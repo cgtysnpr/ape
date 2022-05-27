@@ -50,7 +50,7 @@ const AutoStaking = () => {
                   component="div"
                   sx={{ fontFamily: "Bangers", color: "white" }}
                 >
-                  Auto-Staking
+                  UAD is bringing the online gaming and casino industry to DeFi
                 </Typography>
               </ThemeProvider>
               <Typography
@@ -58,7 +58,7 @@ const AutoStaking = () => {
                 gutterBottom
                 component="div"
                 sx={{
-                  fontFamily: "Poppins",
+                  fontFamily: "Bangers",
                   color: "white",
                   lineHeight: "45px",
                   textAlign: "left",
@@ -78,6 +78,8 @@ const AutoStaking = () => {
                 }}
                 color="error"
                 variant="contained"
+                href="https://klaydoe-uad.gitbook.io/united-apes-defi/auto-staking"
+                target="_blank"
               >
                 LEARN MORE
               </Button>
@@ -103,7 +105,7 @@ const AutoStaking = () => {
                   fontSize: { xs: "50px", md: "53px" },
                 }}
               >
-                Auto-Staking
+                UAD is bringing the online gaming and casino industry to DeFi
               </Typography>
             </ThemeProvider>
             <Image
@@ -120,7 +122,7 @@ const AutoStaking = () => {
               data-aos-delay={200}
               data-aos-duration="500"
               sx={{
-                fontFamily: "Poppins",
+                fontFamily: "Bangers",
                 color: "white",
                 lineHeight: "30px",
                 textAlign: "center",
@@ -146,6 +148,8 @@ const AutoStaking = () => {
               }}
               color="error"
               variant="contained"
+              href="https://klaydoe-uad.gitbook.io/united-apes-defi/auto-staking"
+              target="_blank"
             >
               LEARN MORE
             </Button>

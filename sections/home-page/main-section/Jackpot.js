@@ -51,7 +51,7 @@ const Jackpot = () => {
                 variant="h5"
                 gutterBottom
                 component="div"
-                sx={{ fontFamily: "Poppins", color: "white" }}
+                sx={{ fontFamily: "Bangers", color: "white" }}
               >
                 We decided 2 sources of income wasn't enough so we added a 3rd,
                 the $UAD Jackpot.
@@ -60,7 +60,7 @@ const Jackpot = () => {
                 variant="h5"
                 gutterBottom
                 component="div"
-                sx={{ fontFamily: "Poppins", color: "white" }}
+                sx={{ fontFamily: "Bangers", color: "white" }}
               >
                 How to win:
               </Typography>
@@ -68,7 +68,7 @@ const Jackpot = () => {
                 variant="h5"
                 gutterBottom
                 component="div"
-                sx={{ fontFamily: "Poppins", color: "white" }}
+                sx={{ fontFamily: "Bangers", color: "white" }}
               >
                 - On every buy 4% tax is allocated to Jackpot.
               </Typography>
@@ -76,7 +76,7 @@ const Jackpot = () => {
                 variant="h5"
                 gutterBottom
                 component="div"
-                sx={{ fontFamily: "Poppins", color: "white" }}
+                sx={{ fontFamily: "Bangers", color: "white" }}
               >
                 - On every sell 6% is allocated to the Jackpot.
               </Typography>
@@ -84,7 +84,7 @@ const Jackpot = () => {
                 variant="h5"
                 gutterBottom
                 component="div"
-                sx={{ fontFamily: "Poppins", color: "white" }}
+                sx={{ fontFamily: "Bangers", color: "white" }}
               >
                 - If there is no buy over 0.1 BNB in the last 10 minutes the
                 last person who bought in with over 0.1 BNB will win the
@@ -94,7 +94,7 @@ const Jackpot = () => {
                 variant="h5"
                 gutterBottom
                 component="div"
-                sx={{ fontFamily: "Poppins", color: "white" }}
+                sx={{ fontFamily: "Bangers", color: "white" }}
               >
                 - 10% of all winnings will automatically be sent to the burn
                 address.
@@ -146,7 +146,7 @@ const Jackpot = () => {
             data-aos-delay={200}
             data-aos-duration="500"
             sx={{
-              fontFamily: "Poppins",
+              fontFamily: "Bangers",
               color: "white",
               textAlign: "center",
               fontSize: "17px",
@@ -161,7 +161,7 @@ const Jackpot = () => {
             data-aos-delay={200}
             data-aos-duration="500"
             sx={{
-              fontFamily: "Poppins",
+              fontFamily: "Bangers",
               color: "white",
               textAlign: "center",
               fontSize: "17px",
@@ -175,7 +175,7 @@ const Jackpot = () => {
             data-aos-delay={200}
             data-aos-duration="500"
             sx={{
-              fontFamily: "Poppins",
+              fontFamily: "Bangers",
               color: "white",
               textAlign: "center",
               fontSize: "17px",
@@ -189,7 +189,7 @@ const Jackpot = () => {
             data-aos-delay={200}
             data-aos-duration="500"
             sx={{
-              fontFamily: "Poppins",
+              fontFamily: "Bangers",
               color: "white",
               textAlign: "center",
               fontSize: "17px",
@@ -203,7 +203,7 @@ const Jackpot = () => {
             data-aos-delay={200}
             data-aos-duration="500"
             sx={{
-              fontFamily: "Poppins",
+              fontFamily: "Bangers",
               color: "white",
               textAlign: "center",
               fontSize: "17px",
@@ -218,7 +218,7 @@ const Jackpot = () => {
             data-aos-delay={200}
             data-aos-duration="500"
             sx={{
-              fontFamily: "Poppins",
+              fontFamily: "Bangers",
               color: "white",
               textAlign: "center",
               fontSize: "17px",

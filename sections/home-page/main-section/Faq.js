@@ -51,22 +51,32 @@ const Faq = () => {
           <Box
             sx={{
               width: "100%",
-              display: {xs:"block",md:"flex"},
+              display: { xs: "block", md: "flex" },
               justifyContent: "center",
-              textAlign:"center",
+              textAlign: "center",
               gap: 1,
-              mb:2,
+              mb: 2,
             }}
           >
             <ThemeProvider theme={theme}>
               <Typography
-                sx={{ fontFamily: "Poppins", color: "white", fontSize:"40px", fontWeight:700 }}
+                sx={{
+                  fontFamily: "Bangers",
+                  color: "white",
+                  fontSize: "40px",
+                  fontWeight: 700,
+                }}
               >
                 Frequently Asked
               </Typography>
 
               <Typography
-                sx={{ fontFamily: "Poppins", color: "#FF0000", fontSize:"40px",fontWeight:700 }}
+                sx={{
+                  fontFamily: "Bangers",
+                  color: "#FF0000",
+                  fontSize: "40px",
+                  fontWeight: 700,
+                }}
               >
                 Questions
               </Typography>

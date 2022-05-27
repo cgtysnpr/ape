@@ -44,7 +44,7 @@ const NoBodyWins = ({}) => {
           <ThemeProvider theme={theme}>
             <Typography
               sx={{
-                fontFamily: "Poppins",
+                fontFamily: "Bangers",
                 color: "white",
                 fontSize: { xs: "17px", md: "1.5rem" },
                 fontWeight: 700,
@@ -57,7 +57,7 @@ const NoBodyWins = ({}) => {
           </ThemeProvider>
           <Typography
             sx={{
-              fontFamily: "Poppins",
+              fontFamily: "Bangers",
               color: "white",
               lineHeight: "45px",
               fontSize: { xs: "17px", md: "1.5rem" },
@@ -70,7 +70,7 @@ const NoBodyWins = ({}) => {
           </Typography>
           <Typography
             sx={{
-              fontFamily: "Poppins",
+              fontFamily: "Bangers",
               color: "white",
               lineHeight: "45px",
               fontSize: { xs: "17px", md: "1.5rem" },
@@ -82,7 +82,7 @@ const NoBodyWins = ({}) => {
           </Typography>
           <Typography
             sx={{
-              fontFamily: "Poppins",
+              fontFamily: "Bangers",
               color: "white",
               lineHeight: "45px",
               fontSize: { xs: "17px", md: "1.5rem" },
@@ -94,7 +94,7 @@ const NoBodyWins = ({}) => {
           </Typography>
           <Typography
             sx={{
-              fontFamily: "Poppins",
+              fontFamily: "Bangers",
               color: "white",
               lineHeight: "45px",
               fontSize: { xs: "17px", md: "1.5rem" },
@@ -119,6 +119,8 @@ const NoBodyWins = ({}) => {
             }}
             color="error"
             variant="contained"
+            href="https://klaydoe-uad.gitbook.io/united-apes-defi/jackpot"
+            target="_blank"
           >
             LEARN MORE
           </Button>

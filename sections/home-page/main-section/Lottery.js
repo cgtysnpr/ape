@@ -106,6 +106,8 @@ const Lottery = () => {
                   }}
                   color="error"
                   variant="contained"
+                  href="https://klaydoe-uad.gitbook.io/united-apes-defi/lottery"
+                  target="_blank"
                 >
                   LEARN MORE
                 </Button>
@@ -238,6 +240,8 @@ const Lottery = () => {
               }}
               color="error"
               variant="contained"
+              href="https://klaydoe-uad.gitbook.io/united-apes-defi/lottery"
+              target="_blank"
             >
               LEARN MORE
             </Button>

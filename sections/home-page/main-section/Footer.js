@@ -32,7 +32,7 @@ const Footer = () => {
             data-aos-delay={400}
             data-aos-duration="500"
             sx={{
-              fontFamily: "Poppins",
+              fontFamily: "Bangers",
               color: "white",
               lineHeight: "45px",
               textAlign: "center",
@@ -90,7 +90,7 @@ const Footer = () => {
             data-aos-delay={1200}
             data-aos-duration="500"
             sx={{
-              fontFamily: "Poppins",
+              fontFamily: "Bangers",
               color: "white",
               lineHeight: "45px",
               textAlign: "center",

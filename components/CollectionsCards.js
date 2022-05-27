@@ -27,6 +27,8 @@ const CollectionsCards = ({ data }) => {
             position: "relative",
             pb: 2,
           }}
+          href="https://klaydoe-uad.gitbook.io/united-apes-defi/united-apes-nfts"
+          target="_blank"
         >
           <Typography
             sx={{

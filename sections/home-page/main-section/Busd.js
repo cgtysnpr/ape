@@ -71,7 +71,7 @@ const Busd = () => {
                   gutterBottom
                   component="div"
                   sx={{
-                    fontFamily: "Poppins",
+                    fontFamily: "Bangers",
                     color: "white",
                     lineHeight: "45px",
                   }}
@@ -92,6 +92,8 @@ const Busd = () => {
                   }}
                   color="error"
                   variant="contained"
+                  href="https://klaydoe-uad.gitbook.io/united-apes-defi/busd-reflections"
+                  target="_blank"
                 >
                   LEARN MORE
                 </Button>
@@ -145,7 +147,7 @@ const Busd = () => {
             />
             <Typography
               sx={{
-                fontFamily: "Poppins",
+                fontFamily: "Bangers",
                 color: "white",
                 lineHeight: "45px",
                 textAlign: "center",
@@ -174,6 +176,8 @@ const Busd = () => {
               }}
               color="error"
               variant="contained"
+              href="https://klaydoe-uad.gitbook.io/united-apes-defi/busd-reflections"
+              target="_blank"
             >
               LEARN MORE
             </Button>

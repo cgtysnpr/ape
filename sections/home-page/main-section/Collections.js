@@ -140,7 +140,7 @@ const Collections = () => {
                 data-aos-delay={400}
                 data-aos-duration="500"
                 sx={{
-                  fontFamily: "Poppins",
+                  fontFamily: "Bangers",
                   color: "white",
                   lineHeight: "30px",
                   fontSize: { xs: "17px", md: "20px" },
