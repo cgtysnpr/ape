@@ -41,7 +41,7 @@ const HeroSection = (props) => {
     <>
       <Box
         sx={{
-          backgroundImage: "url('images/hero-section-2.jpg')",
+          backgroundImage: "url('images/hero-section.png')",
           minHeight: "100vh",
           width: "100%",
           backgroundSize: "cover",
