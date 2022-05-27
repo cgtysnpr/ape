@@ -34,6 +34,7 @@ const CollectionsCards = ({ data }) => {
             sx={{
               fontSize: "20px",
               lineHeight: "30px",
+              fontFamily: "Bangers",
               whiteSpace: "nowrap",
               borderBottom: "2px solid #FF0000",
               position: "absolute",
