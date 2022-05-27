@@ -47,7 +47,6 @@ const NoBodyWins = ({}) => {
                 fontFamily: "Bangers",
                 color: "white",
                 fontSize: { xs: "17px", md: "1.5rem" },
-                fontWeight: 700,
                 textAlign: "center",
                 mb: 3,
               }}
