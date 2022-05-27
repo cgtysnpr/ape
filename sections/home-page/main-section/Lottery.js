@@ -50,7 +50,7 @@ const Lottery = () => {
                   gutterBottom
                   component="div"
                   sx={{
-                    fontFamily: "Poppins",
+                    fontFamily: "Bangers",
                     color: "white",
                     lineHeight: "45px",
                   }}
@@ -63,7 +63,7 @@ const Lottery = () => {
                   gutterBottom
                   component="div"
                   sx={{
-                    fontFamily: "Poppins",
+                    fontFamily: "Bangers",
                     color: "white",
                     lineHeight: "45px",
                   }}
@@ -76,7 +76,7 @@ const Lottery = () => {
                   gutterBottom
                   component="div"
                   sx={{
-                    fontFamily: "Poppins",
+                    fontFamily: "Bangers",
                     color: "white",
                     lineHeight: "45px",
                   }}
@@ -89,7 +89,7 @@ const Lottery = () => {
                   gutterBottom
                   component="div"
                   sx={{
-                    fontFamily: "Poppins",
+                    fontFamily: "Bangers",
                     color: "white",
                     lineHeight: "45px",
                   }}
@@ -172,7 +172,7 @@ const Lottery = () => {
               data-aos-delay={200}
               data-aos-duration="500"
               sx={{
-                fontFamily: "Poppins",
+                fontFamily: "Bangers",
                 color: "white",
                 lineHeight: "45px",
                 textAlign: "center",
@@ -187,7 +187,7 @@ const Lottery = () => {
               data-aos-delay={200}
               data-aos-duration="500"
               sx={{
-                fontFamily: "Poppins",
+                fontFamily: "Bangers",
                 color: "white",
                 lineHeight: "45px",
                 textAlign: "center",
@@ -202,7 +202,7 @@ const Lottery = () => {
               data-aos-delay={200}
               data-aos-duration="500"
               sx={{
-                fontFamily: "Poppins",
+                fontFamily: "Bangers",
                 color: "white",
                 lineHeight: "45px",
                 textAlign: "center",
@@ -217,7 +217,7 @@ const Lottery = () => {
               data-aos-delay={200}
               data-aos-duration="500"
               sx={{
-                fontFamily: "Poppins",
+                fontFamily: "Bangers",
                 color: "white",
                 lineHeight: "45px",
                 textAlign: "center",
