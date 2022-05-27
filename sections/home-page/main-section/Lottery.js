@@ -180,7 +180,7 @@ const Lottery = () => {
               }}
             >
               - UAD will hold a lottery every 12 hours and everyone can
-              participate 🔔
+              participate ⏰
             </Typography>
             <Typography
               data-aos="fade-up"
