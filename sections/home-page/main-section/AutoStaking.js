@@ -50,7 +50,7 @@ const AutoStaking = () => {
                   component="div"
                   sx={{ fontFamily: "Bangers", color: "white" }}
                 >
-                  UAD is bringing the online gaming and casino industry to DeFi
+                  Auto Staking
                 </Typography>
               </ThemeProvider>
               <Typography
@@ -105,7 +105,7 @@ const AutoStaking = () => {
                   fontSize: { xs: "50px", md: "53px" },
                 }}
               >
-                UAD is bringing the online gaming and casino industry to DeFi
+                Auto Staking
               </Typography>
             </ThemeProvider>
             <Image

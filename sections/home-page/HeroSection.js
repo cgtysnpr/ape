@@ -107,8 +107,8 @@ const HeroSection = (props) => {
                         },
                       }}
                     >
-                      UNITED APES ARE ON A MISSION TO BRING STRENGTH AND
-                      STABILITY TO DEFI
+                      UAD is bringing the online gaming and casino industry to
+                      DeFi
                     </Typography>
                   </ThemeProvider>
                 </Box>
