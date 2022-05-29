@@ -21,19 +21,23 @@ const NoBodyWins = ({}) => {
           item
           xs={12}
           sx={{
-            display: { xs: "none", md: "flex" },
+            display: "flex",
             justifyContent: "center",
+            marginBottom: { xs: 4, md: 0 },
           }}
         >
-          <Image
-            data-aos="fade-right"
-            data-aos-delay={200}
-            data-aos-duration="500"
-            src="/images/diamond2.png"
-            alt="diamond-2"
-            width={345}
-            height={190}
-          />
+          <Box className="diamond2">
+            <Image
+              data-aos="fade-right"
+              data-aos-delay={200}
+              data-aos-duration="500"
+              src="/images/diamond2.png"
+              alt="diamond-2"
+              width={345}
+              layout="responsive"
+              height={190}
+            />
+          </Box>
         </Box>
         <Box
           data-aos="zoom-in"

@@ -96,19 +96,13 @@ a {
   top: -250px;
 }
 .diamond2 {
-  position: absolute;
-  left: 20px;
-  top: -50px;
   width: 345px;
   height: 190px;
 }
 @media only screen and (max-width: 1800px) {
   .diamond2 {
-    position: absolute;
-    left: 20px;
-    top: -150px;
-    width: 276px;
-    height: 121px;
+    width: 345px;
+    height: 190px;
   }
   .monopoly {
     position: absolute;
@@ -157,11 +151,8 @@ a {
 }
 @media only screen and (max-width: 1299px) {
   .diamond2 {
-    position: absolute;
-    left: 20px;
-    top: -120px;
-    width: 207px;
-    height: 52px;
+    width: 345px;
+    height: 190px;
   }
   .monopoly {
     position: absolute;
@@ -208,11 +199,8 @@ a {
 }
 @media only screen and (max-width: 1199px) {
   .diamond2 {
-    position: absolute;
-    left: 20px;
-    top: -100px;
-    width: 200px;
-    height: 50px;
+    width: 345px;
+    height: 190px;
   }
   .monopoly {
     position: absolute;
@@ -304,6 +292,7 @@ a {
     display: none;
   }
   .diamond2 {
-    display: none;
+    width: 276px;
+    height: 121px;
   }
 }
